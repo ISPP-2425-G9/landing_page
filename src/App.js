@@ -5,8 +5,7 @@ import "./App.css";
 const Header = () => {
   return (
     <header>
-      <img src="/caronte_gris.svg" alt="Logo de Caronte" className="logo" />
-      <h1>Caronte</h1>
+      <img src={`${process.env.PUBLIC_URL}/caronte_gris.svg`} alt="Logo de Caronte" className="logo" />
       <nav>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
