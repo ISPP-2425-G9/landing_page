@@ -1,3 +1,3 @@
-function changeMessage() {
-    document.getElementById("message").innerText = "You have click me!";
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
