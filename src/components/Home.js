@@ -13,7 +13,15 @@ const Home = () => {
           <img src={logo} alt="Caronte Logo" className="hero-logo" />
           <div className="hero-text">
             <h1 className="hero-title">CARONTE</h1>
-            <p className="hero-subtitle">Honrando memorias, facilitando despedidas</p>
+            <p className="hero-subtitle">
+            <span>
+              <span className="highlight">Honrando</span> <span className="highlight">memorias</span>,
+            </span>
+            <br />
+            <span className="step2">
+              <span className="highlight">Facilitando</span> <span className="highlight">despedidas</span>
+            </span>
+            </p>
           </div>
         </div>
       </section>

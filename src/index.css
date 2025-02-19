@@ -77,7 +77,7 @@ nav ul li a {
 
 .hero-logo {
   position: absolute;
-  top: 280px; /* Centra verticalmente */
+  top: 330px; /* Centra verticalmente */
   left: 400px; /* Mueve el logo hacia la izquierda */
   transform: translate(-50%, -50%); /* Ajusta la alineación */
   width: 500px; /* Tamaño del logo */
@@ -86,17 +86,17 @@ nav ul li a {
 }
 
 
-
-
-
-
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .hero p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #3498db;
+  font-weight: bold;
+}
+
+.highlight {
   font-weight: bold;
 }
