@@ -1,7 +1,7 @@
 /* Footer */
 footer {
-  background: white;
-  color: #555;
+  background: #474B4E;
+  color: #f9f9f9;
   text-align: center;
   padding: 20px;
   border-top: 1px solid #ccc;
@@ -26,7 +26,7 @@ footer p {
 }
 
 footer a {
-  color: #555;
+  color: #ffffff;
   text-decoration: none;
 }
 
