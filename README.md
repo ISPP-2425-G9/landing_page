@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+[https://jaime-linares.github.io/caronte-landingpage/](https://jaime-linares.github.io/caronte-landingpage/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
