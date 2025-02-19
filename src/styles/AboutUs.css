@@ -1,36 +1,81 @@
 .about-us {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .about-us h2 {
-    font-size: 2.5rem;
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
   .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
+      grid-template-columns: repeat(2, 1fr);
   }
-  
-  .team-member {
-    text-align: center;
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+      grid-template-columns: repeat(1, 1fr);
   }
-  
-  .team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .team-member h3 {
-    margin: 10px 0 5px;
-  }
-  
-  .team-member p {
-    color: #666;
-  }
-  
+}
+
+.team-member {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 40%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.hobbies {
+  font-style: italic;
+  color: #555;
+}
+
