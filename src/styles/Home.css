@@ -6,20 +6,25 @@
     text-align: center;
   }
   
-  .hero-text h1 {
+  .hero-text {
+    position: absolute; /* Para poder moverlo libremente */
+    top: 350px; /* Ajusta verticalmente */
+    left: 490px; /* Ajusta horizontalmente */
+    transform: translate(-50%, -50%); /* Centra perfectamente */
+    text-align: center;
+    z-index: 2; /* Asegura que esté delante del logo */
+}
+
+.hero-text h1 {
     font-size: 2.5rem;
-    margin-top: -190px;
-    margin-bottom: 5px; 
-    position: relative;
-    left: -30px; 
+    margin-bottom: 5px;
 }
 
 .hero-text p {
     font-size: 1.2rem;
-    margin-top: 0px; 
-    position: relative;
-    left: -30px; 
+    margin-top: 0px;
 }
+
 
   
   .btn-cta {
@@ -36,15 +41,16 @@
   }
   
   .caronte-info {
-    text-align: center;
+    text-align: center;  
     margin-top: 50px;
     padding: 40px;
     background: #f9f9f9;
     border-radius: 10px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    max-width: 700px; 
+    margin-left: 55%; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
 
 .caronte-info h2 {
     font-size: 2rem;
