@@ -1,23 +1,72 @@
 .contact {
-    background: #f2f2f2;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .contact h2 {
-    font-size: 2.5rem;
-  }
-  
-  .contact button {
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .contact button:hover {
-    background: #0056b3;
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 15px;
+  line-height: 1.6;
+}
+
+.contact-details {
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-item .icon {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #007bff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #0056b3;
+}
