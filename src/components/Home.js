@@ -11,7 +11,7 @@ const Home = () => {
           <img src={logo} alt="Caronte Logo" className="hero-logo" />
           <div className="hero-text">
             <h1 className="hero-title">CARONTE</h1>
-            <p className="hero-subtitle">Tu legado, en buenas manos</p>
+            <p className="hero-subtitle">Cumpliendo tu último deseo</p>
           </div>
         </div>
       </section>
