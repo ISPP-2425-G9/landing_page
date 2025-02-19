@@ -1,44 +1,72 @@
 header {
-    background: #222;
-    color: white;
-    padding: 15px 0;
-  }
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .logo {
-    height: 50px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .auth-buttons .btn-login,
-  .auth-buttons .btn-register {
-    padding: 8px 15px;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .auth-buttons .btn-register {
-    background: #007bff;
-  }
-  
-  .auth-buttons .btn-register:hover {
-    background: #0056b3;
-  }
-  
+  background: #222;
+  color: white;
+  padding: 15px 0;
+}
+
+.container.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 50px;
+  width: auto; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 5px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: inline-block; 
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #f1f1f1; 
+}
+
+
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .btn-login,
+.auth-buttons .btn-register {
+  padding: 8px 15px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.auth-buttons .btn-register {
+  background: #007bff;
+}
+
+.auth-buttons .btn-register:hover {
+  background: #0056b3;
+}
