@@ -1,0 +1,44 @@
+header {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .auth-buttons .btn-login,
+  .auth-buttons .btn-register {
+    padding: 8px 15px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .auth-buttons .btn-register {
+    background: #007bff;
+  }
+  
+  .auth-buttons .btn-register:hover {
+    background: #0056b3;
+  }
+  

@@ -1,0 +1,36 @@
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    font-size: 2.5rem;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .team-member p {
+    color: #666;
+  }
+  
