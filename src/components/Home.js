@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/Home.css";
-import { FaShieldAlt, FaHandshake, FaCloud } from "react-icons/fa";  
+import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";  
 import logo from "../caronte_gris.png";
+
+
 
 const Home = () => {
   return (
@@ -11,16 +13,17 @@ const Home = () => {
           <img src={logo} alt="Caronte Logo" className="hero-logo" />
           <div className="hero-text">
             <h1 className="hero-title">CARONTE</h1>
-            <p className="hero-subtitle">Cumpliendo tu último deseo</p>
+            <p className="hero-subtitle">Honrando memorias, facilitando despedidas</p>
           </div>
         </div>
       </section>
       <div className="caronte-info">
-        <h2>¿Qué es Caronte?</h2>
+        <h2>¿Qué es CARONTE?</h2>
         <p>
-          Caronte es una plataforma innovadora que te ayuda a gestionar tu legado digital 
-          de manera segura y eficiente. Nos aseguramos de que tu información más importante 
-          permanezca accesible para quienes más importan.
+          CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales 
+          a una lista de contactos seleccionada. Garantizamos que los mensajes y esquelas sean enviados solo tras la 
+          confirmación del fallecimiento, asegurando la entrega en el momento adecuado. Además, tendrás la opción de ver
+          los servicios y ofertas que ofrecen varias empresas del sector.
         </p>
       </div>
       <section className="why-choose-us">
@@ -30,7 +33,7 @@ const Home = () => {
             <div className="feature">
               <FaShieldAlt size={40} color="#3498db" />
               <h3>Seguridad</h3>
-              <p>Contamos con un sistema de cifrado de extremo a extremo para proteger tus datos más valiosos.</p>
+              <p>Utilizamos verificación de fallecimiento mediante certificado de defunción y cifrado seguro.</p>
             </div>
             <div className="feature">
               <FaHandshake size={40} color="#3498db" />
@@ -38,9 +41,14 @@ const Home = () => {
               <p>Somos una plataforma transparente, confiable y accesible para todos.</p>
             </div>
             <div className="feature">
+              <FaUserCheck size={40} color="#3498db" />
+              <h3>Automatización</h3>
+              <p>El sistema notifica a contactos de emergencia y gestiona el envío de mensajes y esquelas.</p>
+            </div>
+            <div className="feature">
               <FaCloud size={40} color="#3498db" />
-              <h3>Accesibilidad</h3>
-              <p>Puedes gestionar tu legado digital desde cualquier lugar, en cualquier momento.</p>
+              <h3>Personalización</h3>
+              <p>Ofrecemos la posibilidad de personalizar mensajes y esquelas con fotos, videos y datos del funeral.</p>
             </div>
           </div>
         </div>
@@ -49,8 +57,8 @@ const Home = () => {
         <div className="container">
           <h2>¿Quiénes somos?</h2>
           <p>
-            En Caronte, nos apasiona ofrecer soluciones tecnológicas innovadoras para que puedas gestionar tu legado digital con seguridad y tranquilidad. 
-            Nuestro equipo está compuesto por profesionales con amplia experiencia en seguridad digital y servicios funerarios, comprometidos con la protección de tus datos y el bienestar de los usuarios.
+            En CARONTE, somos un equipo comprometido en facilitar la gestión de la despedida digital. Nuestra plataforma está diseñada 
+            para asegurar que los mensajes y esquelas sean enviados de manera organizada, respetando la voluntad del usuario.
           </p>
         </div>
       </section>
