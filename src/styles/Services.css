@@ -17,10 +17,11 @@ h2 {
 }
 
 .service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-  gap: 40px;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: nowrap;
   margin-top: 30px;
 }
 
@@ -29,7 +30,7 @@ h2 {
   padding: 30px;
   border-radius: 15px; 
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 320px;
   height: auto; 
   display: flex;
   flex-direction: column;
@@ -37,7 +38,6 @@ h2 {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   position: relative;
-  margin-bottom: 30px; 
 }
 
 .service:hover {
@@ -104,15 +104,22 @@ h2 {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .service-grid {
-    grid-template-columns: 1fr; 
-    gap: 20px; 
+    flex-wrap: wrap;
   }
 
   .service {
-    width: 90%; 
-    margin: 0 auto;
-    margin-bottom: 20px; 
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-grid {
+    flex-direction: column;
+  }
+
+  .service {
+    width: 90%;
   }
 }
