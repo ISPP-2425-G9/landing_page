@@ -1,0 +1,33 @@
+.legal-section {
+    padding: 60px 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.legal-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.legal-section h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+.legal-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.legal-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}

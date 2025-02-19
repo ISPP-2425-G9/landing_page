@@ -6,6 +6,10 @@ import Services from "./Services";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Terms from "./Terms";
+import Privacy from "./Privacy";
+
+
 
 const AppRoutes = () => {
   return (
@@ -17,6 +21,8 @@ const AppRoutes = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer />
     </Router>
