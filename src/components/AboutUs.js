@@ -6,7 +6,7 @@ import "../styles/AboutUs.css";
 const teamMembers = [
   { name: "Hugo Angulo Borrego", role: "Desarrollador Full-Stack", image: "/team/hugo.png", hobbies: "Amante de la tecnología y los gatos." },
   { name: "Ángel García Escudero", role: "Desarrollador Full-Stack", image: "/team/angel.png", hobbies: "Apasionado del cine y la inteligencia artificial." },
-  { name: "Álvaro Chico Castellano", role: "Desarrollador Full-Stack", image: "/team/alvaro.png", hobbies: "Apasionado de la ingerniería software e interesado en la inteligencia artificial." },
+  { name: "Álvaro Chico Castellano", role: "Desarrollador Full-Stack", image: "/team/alvaro.png", hobbies: "Apasionado de la ingeniería software e interesado en la inteligencia artificial." },
   { name: "Andrés Francisco García Rivero", role: "Desarrollador Full-Stack", image: "/team/andres.png", hobbies: "Jugador de ajedrez y aficionado a la astronomía." },
   { name: "Rafael Duque Colete", role: "Desarrollador Full-Stack", image: "/team/rafael.png", hobbies: "Le encanta el ciclismo y la robótica." },
   { name: "David Guillén Fernández", role: "Desarrollador Full-Stack", image: "/team/david.png", hobbies: "Apasionado del deporte y la programación." },

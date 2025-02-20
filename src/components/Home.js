@@ -19,7 +19,7 @@ const Home = () => {
             </span>
             <br />
             <span className="step2">
-              <span className="highlight">Facilitando</span> <span className="highlight">despedidas</span>
+              <span className="highlight">facilitando</span> <span className="highlight">despedidas</span>
             </span>
             </p>
           </div>

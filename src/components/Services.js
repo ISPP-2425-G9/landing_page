@@ -13,7 +13,7 @@ const servicesData = [
     type: "user", 
   },
   {
-    title: "Plan anual",
+    title: "Plan mensual",
     description: "Deja mensajes totalmente personalizados que serán enviados tras la confirmación de tu fallecimiento.",
     price: "0.99€/mes",
     icon: <FaRegAddressBook />,
