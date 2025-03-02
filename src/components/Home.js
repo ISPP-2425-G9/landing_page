@@ -28,10 +28,18 @@ const Home = () => {
       <div className="caronte-info">
         <h2>¿Qué es CARONTE?</h2>
         <p>
-          CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales 
-          a una lista de contactos seleccionada. Garantizamos que los mensajes y esquelas sean enviados solo tras la 
-          confirmación del fallecimiento, asegurando la entrega en el momento adecuado. Además, tendrás la opción de ver
-          los servicios y ofertas que ofrecen varias empresas del sector.
+          ✔️ CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales
+          a una lista de contactos seleccionada.
+        </p>
+        <p>
+          ✔️ <strong>No queremos que dejes palabras sin decir:</strong> garantizamos que los mensajes y esquelas sean enviados tras 
+          la confirmación del fallecimiento, asegurando la entrega en el momento adecuado.
+        </p>
+        <p>
+          <strong>✔️ Cumplimos tu último deseo facilitando despedidas seguras y recuerdos eternos.</strong>
+        </p>
+        <p>
+          ✔️ Además, ofrecemos un espacio para que las empresas relacionadas con el sector funerario puedan patrocinar sus servicios.
         </p>
       </div>
       <section className="why-choose-us">
