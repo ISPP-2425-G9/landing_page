@@ -79,6 +79,7 @@
   align-items: center; /* Centra los elementos horizontalmente */
   gap: 30px; /* Espaciado entre los elementos */
   text-align: center; /* Centra el texto */
+  margin-bottom: 50px; /* Ajuste de margen */
 }
 
 .hero-text {
@@ -92,13 +93,21 @@
 
 .caronte-info {
   text-align: center;
-  padding: 10px 10px; 
-  font-size: 1.2rem; 
+  padding: 20px 20px; /* Más relleno para destacar el contenido */
+  font-size: 1.4rem; /* Tamaño de fuente más grande para resaltar */
   color: #434343;
-  line-height: 1.4; 
-  text-align: center; 
-  margin: 0 auto; 
-  max-width: 1200px;
+  line-height: 1.6; /* Mayor espacio entre líneas para legibilidad */
+  margin: 20px auto; /* Más margen para separar del resto del contenido */
+  max-width: 1600px;
+  border: 1px solid #434343; /* Borde más grueso y visible */
+  border-radius: 20px; /* Bordes redondeados para un diseño moderno */
+  box-shadow: 0 0 15px rgba(67, 67, 67, 0.5); /* Efecto de resplandor sutil */
+  background-color: #F3F3F3; /* Fondo blanco para destacar el contenido */
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+.caronte-info:hover {
+  transform: scale(1.01); /* Efecto de aumento al pasar el cursor */
 }
 
 
@@ -114,6 +123,7 @@
 
   .caronte-info {
     padding: 30px; /* Ajuste de espaciado */
+    margin: 20px;
   }
 }
 
