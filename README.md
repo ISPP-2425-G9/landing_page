@@ -64,11 +64,3 @@ La Landing Page de Caronte es una aplicación web desarrollada con React que pro
    ```
 
 En la salida de la consola, encontrarás la ruta para abrir la app en el navegador: `http://localhost:8081`.
-
-## Restablecer el proyecto
-   
-   Si deseas comenzar con una versión limpia del proyecto, puedes ejecutar:
-   ```bash
-   npm run reset-project
-   ```
-   Este comando moverá el código inicial a un directorio de ejemplo y creará un nuevo directorio app donde podrás empezar a desarrollar.
