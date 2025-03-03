@@ -1,39 +1,39 @@
 import React from "react";
 import "../styles/Home.css";
-import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";  
+import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";
 import logo from "../caronte_gris.png";
-
 
 
 const Home = () => {
   return (
-    <div className="home-container"> 
+    <div className="home-container">
       <section className="hero">
-        <div className="container">
-          <img src={logo} alt="Caronte Logo" className="hero-logo" />
+        <div className="hero-container">
           <div className="hero-text">
-            <h1 className="hero-title">CARONTE</h1>
-            <p className="hero-subtitle">
-            <span>
-              <span className="highlight">Honrando</span> <span className="highlight">memorias</span>,
-            </span>
-            <br />
-            <span className="step2">
-              <span className="highlight">facilitando</span> <span className="highlight">despedidas</span>
-            </span>
+              <h1 className="hero-title">CARONTE</h1>
+              <p className="hero-subtitle">
+                <span>
+                  <span className="highlight">Honrando</span> <span className="highlight">memorias</span>,
+                </span>
+                <br />
+                <span className="step2">
+                  <span className="highlight">facilitando</span> <span className="highlight">despedidas</span>
+                </span>
+              </p>
+            </div>
+            <img src={logo} alt="Caronte Logo" className="hero-logo" />
+          <div className="caronte-info">
+            <h2>¿Qué es CARONTE?</h2>
+            <p>
+              CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales
+              a una lista de contactos seleccionada. Garantizamos que los mensajes y esquelas sean enviados solo tras la
+              confirmación del fallecimiento, asegurando la entrega en el momento adecuado. Además, tendrás la opción de ver
+              los servicios y ofertas que ofrecen varias empresas del sector.
             </p>
           </div>
         </div>
       </section>
-      <div className="caronte-info">
-        <h2>¿Qué es CARONTE?</h2>
-        <p>
-          CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales 
-          a una lista de contactos seleccionada. Garantizamos que los mensajes y esquelas sean enviados solo tras la 
-          confirmación del fallecimiento, asegurando la entrega en el momento adecuado. Además, tendrás la opción de ver
-          los servicios y ofertas que ofrecen varias empresas del sector.
-        </p>
-      </div>
+
       <section className="why-choose-us">
         <div className="container">
           <h2>¿Por qué elegirnos?</h2>
@@ -65,7 +65,7 @@ const Home = () => {
         <div className="container">
           <h2>¿Quiénes somos?</h2>
           <p>
-            En CARONTE, somos un equipo comprometido en facilitar la gestión de la despedida digital. Nuestra plataforma está diseñada 
+            En CARONTE, somos un equipo comprometido en facilitar la gestión de la despedida digital. Nuestra plataforma está diseñada
             para asegurar que los mensajes y esquelas sean enviados de manera organizada, respetando la voluntad del usuario.
           </p>
         </div>
