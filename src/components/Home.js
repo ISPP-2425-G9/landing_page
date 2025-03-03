@@ -10,30 +10,36 @@ const Home = () => {
       <section className="hero">
         <div className="hero-container">
           <div className="hero-text">
-              <h1 className="hero-title">CARONTE</h1>
-              <p className="hero-subtitle">
-                <span>
-                  <span className="highlight">Honrando</span> <span className="highlight">memorias</span>,
-                </span>
-                <br />
-                <span className="step2">
-                  <span className="highlight">facilitando</span> <span className="highlight">despedidas</span>
-                </span>
-              </p>
-            </div>
-            <img src={logo} alt="Caronte Logo" className="hero-logo" />
-          <div className="caronte-info">
-            <h2>¿Qué es CARONTE?</h2>
-            <p>
-              CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales
-              a una lista de contactos seleccionada. Garantizamos que los mensajes y esquelas sean enviados solo tras la
-              confirmación del fallecimiento, asegurando la entrega en el momento adecuado. Además, tendrás la opción de ver
-              los servicios y ofertas que ofrecen varias empresas del sector.
+            <h1 className="hero-title">CARONTE</h1>
+            <p className="hero-subtitle">
+            <span>
+              <span className="highlight">Honrando</span> <span className="highlight">memorias</span>,
+            </span>
+            <br />
+            <span className="step2">
+              <span className="highlight">facilitando</span> <span className="highlight">despedidas</span>
+            </span>
             </p>
           </div>
         </div>
       </section>
-
+      <div className="caronte-info">
+        <h2>¿Qué es CARONTE?</h2>
+        <p>
+          ✔️ CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales
+          a una lista de contactos seleccionada.
+        </p>
+        <p>
+          ✔️ <strong>No queremos que dejes palabras sin decir:</strong> garantizamos que los mensajes y esquelas sean enviados tras 
+          la confirmación del fallecimiento, asegurando la entrega en el momento adecuado.
+        </p>
+        <p>
+          <strong>✔️ Cumplimos tu último deseo facilitando despedidas seguras y recuerdos eternos.</strong>
+        </p>
+        <p>
+          ✔️ Además, ofrecemos un espacio para que las empresas relacionadas con el sector funerario puedan patrocinar sus servicios.
+        </p>
+      </div>
       <section className="why-choose-us">
         <div className="container">
           <h2>¿Por qué elegirnos?</h2>
