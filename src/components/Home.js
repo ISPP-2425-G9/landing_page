@@ -21,6 +21,7 @@ const Home = () => {
             </span>
             </p>
           </div>
+          <img src={logo} alt="Caronte logo" className="hero-logo" />
         </div>
       </section>
       <div className="caronte-info">
