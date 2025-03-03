@@ -1,7 +1,11 @@
 import React from "react";
 import "../styles/Contact.css";
-
-
+import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -39,7 +43,12 @@ const Contact = () => {
         <div className="social-media">
           <h3>Nuestras redes sociales</h3>
           <div className="social-icons">
-            <a href="https://jaime-linares.github.io/caronte-landingpage/" target="_blank" rel="noopener noreferrer">🌐</a>
+            <a href="https://instagram.com/caronteapp" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/in/carronte-app-6b200a354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://x.com/CaronteApp" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
+            <a href="https://www.facebook.com/profile.php?id=61573575124143" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://www.tiktok.com/@caronteapp" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+            <a href="https://github.com/ISPP-2425-G9" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
           </div>
         </div>
       </div>
