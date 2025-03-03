@@ -27,7 +27,7 @@ html, body {
 
 /* Header */
 header {
-  background-color: #474B4E;
+  background-color: #434343;
   color: black;
   padding: 20px 0;
 }
@@ -45,7 +45,7 @@ header {
 
 /* Botón de registro */
 .btn-registro {
-  background-color: #3498db;
+  background-color: #42B5FC;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -67,7 +67,7 @@ header {
 
 .hero p {
   font-size: 1.5rem;
-  color: #3498db;
+  color: #42B5FC;
   font-weight: bold;
 }
 

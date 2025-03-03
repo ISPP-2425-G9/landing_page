@@ -46,7 +46,7 @@
 }
 
 .contact-item a {
-  color: #007bff;
+  color: #42B5FC;
   text-decoration: none;
   font-weight: bold;
 }
@@ -62,11 +62,10 @@
 .social-icons a {
   font-size: 2rem;
   margin: 0 10px;
-  color: #007bff;
+  color: #42B5FC;
   transition: transform 0.2s ease-in-out;
 }
 
 .social-icons a:hover {
   transform: scale(1.2);
-  color: #0056b3;
 }

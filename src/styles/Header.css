@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #3498db;
+  color: #42B5FC;
   text-decoration: none;
   font-weight: bold;
 }
@@ -111,12 +111,9 @@ nav ul li a {
 }
 
 .auth-buttons .btn-register {
-  background: #007bff;
+  background: #42B5FC;
 }
 
-.auth-buttons .btn-register:hover {
-  background: #0056b3;
-}
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {

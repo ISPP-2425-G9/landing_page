@@ -6,7 +6,7 @@
 .why-choose-us h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: #434343;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -34,32 +34,32 @@
 
 .feature h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: #434343;
   margin-bottom: 20px;
 }
 
 .feature p {
   font-size: 1rem;
-  color: #555;
+  color: #434343;
   line-height: 1.6;
 }
 
 .feature .icon {
   font-size: 3rem;
-  color: #3498db; 
+  color: #42B5FC; 
   margin-bottom: 20px;
 }
 
 .hero-title {
   font-size: 3rem; 
   font-weight: bold;
-  color: #333;
+  color: #434343;
   margin-bottom: 5px; 
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: #3498db;
+  color: #42B5FC;
   margin-top: 0; 
 }
 
@@ -94,7 +94,7 @@
   text-align: center;
   padding: 10px 10px; 
   font-size: 1.2rem; 
-  color: #555;
+  color: #434343;
   line-height: 1.4; 
   text-align: center; 
   margin: 0 auto; 

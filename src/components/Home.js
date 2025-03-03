@@ -46,22 +46,22 @@ const Home = () => {
           <h2>¿Por qué elegirnos?</h2>
           <div className="features">
             <div className="feature">
-              <FaShieldAlt size={40} color="#3498db" />
+              <FaShieldAlt size={40} color="#42B5FC" />
               <h3>Seguridad</h3>
               <p>Utilizamos verificación de fallecimiento mediante certificado de defunción y cifrado seguro.</p>
             </div>
             <div className="feature">
-              <FaHandshake size={40} color="#3498db" />
+              <FaHandshake size={40} color="#42B5FC" />
               <h3>Confianza</h3>
               <p>Somos una plataforma transparente, confiable y accesible para todos.</p>
             </div>
             <div className="feature">
-              <FaUserCheck size={40} color="#3498db" />
+              <FaUserCheck size={40} color="#42B5FC" />
               <h3>Automatización</h3>
               <p>El sistema notifica a contactos de emergencia y gestiona el envío de mensajes y esquelas.</p>
             </div>
             <div className="feature">
-              <FaCloud size={40} color="#3498db" />
+              <FaCloud size={40} color="#42B5FC" />
               <h3>Personalización</h3>
               <p>Ofrecemos la posibilidad de personalizar mensajes y esquelas con fotos, videos y datos del funeral.</p>
             </div>
