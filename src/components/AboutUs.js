@@ -5,14 +5,14 @@ import "../styles/AboutUs.css";
 
 const teamMembers = [
   { name: "Hugo Angulo Borrego", role: "Desarrollador Full-Stack", image: "/team/hugo.png", hobbies: "Amante de la tecnología y los gatos." },
-  { name: "Ángel García Escudero", role: "Desarrollador Full-Stack", image: "/team/angel.png", hobbies: "Apasionado del cine y la inteligencia artificial." },
   { name: "Álvaro Chico Castellano", role: "Desarrollador Full-Stack", image: "/team/alvaro.png", hobbies: "Apasionado de la ingeniería software e interesado en la inteligencia artificial." },
-  { name: "Andrés Francisco García Rivero", role: "Desarrollador Full-Stack", image: "/team/andres.png", hobbies: "Jugador de ajedrez y aficionado a la astronomía." },
   { name: "Rafael Duque Colete", role: "Desarrollador Full-Stack", image: "/team/rafael.png", hobbies: "Le encanta el ciclismo y la robótica." },
-  { name: "David Guillén Fernández", role: "Desarrollador Full-Stack", image: "/team/david.png", hobbies: "Apasionado del deporte y la programación." },
   { name: "Daniel Galván Cancio", role: "Desarrollador Full-Stack", image: "/team/daniel.png", hobbies: "Apasionado de nuevos retos tecnológicos." },
-  { name: "Lucas Manuel Herencia Solís", role: "Desarrollador Full-Stack", image: "/team/lucas.png", hobbies: "Amante de Java." },
   { name: "Juan García Carballo", role: "Desarrollador Full-Stack", image: "/team/juan.png", hobbies: "Fan de la música rock y los escape rooms." },
+  { name: "Ángel García Escudero", role: "Desarrollador Full-Stack", image: "/team/angel.png", hobbies: "Apasionado del cine y la inteligencia artificial." },
+  { name: "Andrés Francisco García Rivero", role: "Desarrollador Full-Stack", image: "/team/andres.png", hobbies: "Jugador de ajedrez y aficionado a la astronomía." },
+  { name: "David Guillén Fernández", role: "Desarrollador Full-Stack", image: "/team/david.png", hobbies: "Apasionado del deporte y la programación." },
+  { name: "Lucas Manuel Herencia Solís", role: "Desarrollador Full-Stack", image: "/team/lucas.png", hobbies: "Amante de Java." },
   { name: "Jaime Linares Barrera", role: "Desarrollador Full-Stack", image: "/team/jaime.png", hobbies: "Fanático del fútbol y apasionado de la inteligencia artificial." },
   { name: "Jorge Muñoz Rodríguez", role: "Desarrollador Full-Stack", image: "/team/jorge.png", hobbies: "Le encanta el baloncesto y los drones." },
   { name: "Alejandro Pérez Santiago", role: "Desarrollador Full-Stack", image: "/team/alejandro.png", hobbies: "Aficionado a la escalada y la programación creativa." },
@@ -26,7 +26,7 @@ const AboutUs = () => {
   return (
     <section id="about" className="about-us">
       <div className="container">
-        <h2>Sobre Nosotros</h2>
+        <h2>Sobre nosotros</h2>
         <h3>Conoce al equipo detrás de CARONTE</h3>
         <br></br>
         <h1>¿Quiénes son los miembros del equipo CARONTE?</h1>

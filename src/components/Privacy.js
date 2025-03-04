@@ -33,7 +33,7 @@ const Privacy = () => {
         <h3>4. Derechos del Usuario</h3>
         <p>
           Puedes solicitar acceso, modificación o eliminación de tus datos en cualquier momento enviándonos un correo a 
-          <a href="mailto:admin@caronte.site"> admin@caronte.site</a>.
+          <a href="mailto:info@caronte.site"> info@caronte.site</a>.
         </p>
 
         <h3>5. Cambios en la Política</h3>
