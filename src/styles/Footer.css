@@ -1,11 +1,28 @@
 /* Footer */
 footer {
-  background: #474B4E;
+  background: #434343;
   color: #f9f9f9;
   text-align: center;
   padding: 20px;
   border-top: 1px solid #ccc;
   margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-section a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
 }
 
 footer .social-icons {
@@ -28,8 +45,20 @@ footer p {
 footer a {
   color: #ffffff;
   text-decoration: none;
+  size: 2rem;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
 }

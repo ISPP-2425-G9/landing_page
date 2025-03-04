@@ -6,7 +6,7 @@
 .why-choose-us h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: #434343;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -34,53 +34,33 @@
 
 .feature h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: #434343;
   margin-bottom: 20px;
 }
 
 .feature p {
   font-size: 1rem;
-  color: #555;
+  color: #434343;
   line-height: 1.6;
 }
 
 .feature .icon {
   font-size: 3rem;
-  color: #3498db; 
+  color: #42B5FC; 
   margin-bottom: 20px;
 }
-
-
 
 .hero-title {
   font-size: 3rem; 
   font-weight: bold;
-  color: #333;
+  color: #434343;
   margin-bottom: 5px; 
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: #3498db;
+  color: #42B5FC;
   margin-top: 0; 
-}
-
-.hero-container {
-  display: flex;
-  align-items: center; 
-  justify-content: flex-start; 
-  gap: 60px; 
-  padding-left: 100px; 
-  flex-wrap: wrap; 
-}
-
-.hero-text {
-  position: absolute; 
-  top: 310px;
-  left: 410px; 
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  z-index: 2; 
 }
 
 .hero-text h1 {
@@ -90,38 +70,62 @@
 
 .hero-text p {
   font-size: 1.2rem;
-  margin-top: 0px;
+  margin: 0;
+}
+
+.hero-container {
+  display: flex; /* Alinea los elementos horizontalmente */
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  gap: 30px; /* Espaciado entre los elementos */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 50px; /* Ajuste de margen */
+}
+
+.hero-text {
+  max-width: 600px; /* Limita el ancho del texto */
+}
+
+.hero-logo {
+  width: 240px; /* Ajusta el tamaño del logo */
+  height: auto;
 }
 
 .caronte-info {
   text-align: center;
-  width: 30%; 
-  max-width: 90%; 
-  background: #f9f9f9;
-  padding: 50px 60px; 
-  border-radius: 15px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  margin: 50px auto; 
-  margin-left: 600px;
-  top: -100px;
-  left: 500px; 
-  position: relative; 
-  font-size: 1.2rem; 
-  color: #555;
-  line-height: 1.6; 
-  text-align: center; 
-  margin: 0 auto; 
-  max-width: 80%; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
+  padding: 20px 20px; /* Más relleno para destacar el contenido */
+  font-size: 1.4rem; /* Tamaño de fuente más grande para resaltar */
+  color: #434343;
+  line-height: 1.6; /* Mayor espacio entre líneas para legibilidad */
+  margin: 20px auto; /* Más margen para separar del resto del contenido */
+  max-width: 1600px;
+  border: 1px solid #434343; /* Borde más grueso y visible */
+  border-radius: 20px; /* Bordes redondeados para un diseño moderno */
+  box-shadow: 0 0 15px rgba(67, 67, 67, 0.5); /* Efecto de resplandor sutil */
+  background-color: #F3F3F3; /* Fondo blanco para destacar el contenido */
+  transition: transform 0.3s ease; /* Animación suave */
 }
 
 .caronte-info:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.01); /* Efecto de aumento al pasar el cursor */
 }
 
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-container {
+    gap: 20px; /* Menos espacio en pantallas pequeñas */
+  }
+
+  .hero-logo {
+    width: 150px; /* Logo más pequeño */
+  }
+
+  .caronte-info {
+    padding: 30px; /* Ajuste de espaciado */
+    margin: 20px;
+  }
+}
 
 
 @media (max-width: 768px) {

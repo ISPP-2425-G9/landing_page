@@ -11,6 +11,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .main-content {
@@ -22,12 +23,11 @@ html, body {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* Header */
 header {
-  background-color: #474B4E;
+  background-color: #434343;
   color: black;
   padding: 20px 0;
 }
@@ -42,25 +42,10 @@ header {
   width: 120px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 /* Botón de registro */
 .btn-registro {
-  background-color: #3498db;
+  background-color: #42B5FC;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -72,17 +57,6 @@ nav ul li a {
 .hero {
   position: relative;
   text-align: center;
-  padding: 100px 20px;
-}
-
-.hero-logo {
-  position: absolute;
-  top: 330px; /* Centra verticalmente */
-  left: 400px; /* Mueve el logo hacia la izquierda */
-  transform: translate(-50%, -50%); /* Ajusta la alineación */
-  width: 500px; /* Tamaño del logo */
-  opacity: 0.08; /* Mantiene la visibilidad sutil */
-  z-index: -1; /* Mantiene el logo detrás del texto */
 }
 
 
@@ -93,7 +67,7 @@ nav ul li a {
 
 .hero p {
   font-size: 1.5rem;
-  color: #3498db;
+  color: #42B5FC;
   font-weight: bold;
 }
 

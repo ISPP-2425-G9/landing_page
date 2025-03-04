@@ -1,6 +1,6 @@
 import React from "react";
+import { FaBusinessTime, FaCalendarCheck, FaRegAddressBook } from "react-icons/fa";
 import "../styles/Services.css";
-import { FaCalendarCheck, FaBusinessTime, FaRegAddressBook } from "react-icons/fa"; 
 
 
 
@@ -21,7 +21,7 @@ const servicesData = [
   },
   {
     title: "Publicidad para Empresas",
-    description: "Publicita tu empresa relacionada con el sector funerario (funeraria, notaria, floristería, etc.) para que más clientes puedan conocer tus servicios.",
+    description: "Publicita tu empresa relacionada con el sector funerario (funeraria, notaría, floristería, etc.) para que más clientes puedan conocer tus servicios.",
     price: "9.99€/mes",
     icon: <FaBusinessTime />, 
     type: "company", 
@@ -32,7 +32,7 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <div className="container">
-        <h2>Nuestros Servicios</h2>
+        <h2>Nuestros servicios</h2>
         <h3>Ofrecemos una plataforma segura para gestionar tu legado digital y comunicación post-mortem.</h3>
 
         <div className="service-grid">

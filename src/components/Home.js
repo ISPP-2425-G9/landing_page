@@ -1,16 +1,14 @@
 import React from "react";
 import "../styles/Home.css";
-import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";  
+import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";
 import logo from "../caronte_gris.png";
-
 
 
 const Home = () => {
   return (
-    <div className="home-container"> 
+    <div className="home-container">
       <section className="hero">
-        <div className="container">
-          <img src={logo} alt="Caronte Logo" className="hero-logo" />
+        <div className="hero-container">
           <div className="hero-text">
             <h1 className="hero-title">CARONTE</h1>
             <p className="hero-subtitle">
@@ -23,15 +21,24 @@ const Home = () => {
             </span>
             </p>
           </div>
+          <img src={logo} alt="Caronte logo" className="hero-logo" />
         </div>
       </section>
       <div className="caronte-info">
         <h2>¿Qué es CARONTE?</h2>
         <p>
-          CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales 
-          a una lista de contactos seleccionada. Garantizamos que los mensajes y esquelas sean enviados solo tras la 
-          confirmación del fallecimiento, asegurando la entrega en el momento adecuado. Además, tendrás la opción de ver
-          los servicios y ofertas que ofrecen varias empresas del sector.
+          ✔️ CARONTE es una plataforma que permite a los usuarios gestionar el envío de mensajes finales y esquelas digitales
+          a una lista de contactos seleccionada.
+        </p>
+        <p>
+          ✔️ <strong>No queremos que dejes palabras sin decir:</strong> garantizamos que los mensajes y esquelas sean enviados tras 
+          la confirmación del fallecimiento, asegurando la entrega en el momento adecuado.
+        </p>
+        <p>
+          <strong>✔️ Cumplimos tu último deseo facilitando despedidas seguras y recuerdos eternos.</strong>
+        </p>
+        <p>
+          ✔️ Además, ofrecemos un espacio para que las empresas relacionadas con el sector funerario puedan patrocinar sus servicios.
         </p>
       </div>
       <section className="why-choose-us">
@@ -39,22 +46,22 @@ const Home = () => {
           <h2>¿Por qué elegirnos?</h2>
           <div className="features">
             <div className="feature">
-              <FaShieldAlt size={40} color="#3498db" />
+              <FaShieldAlt size={40} color="#42B5FC" />
               <h3>Seguridad</h3>
               <p>Utilizamos verificación de fallecimiento mediante certificado de defunción y cifrado seguro.</p>
             </div>
             <div className="feature">
-              <FaHandshake size={40} color="#3498db" />
+              <FaHandshake size={40} color="#42B5FC" />
               <h3>Confianza</h3>
               <p>Somos una plataforma transparente, confiable y accesible para todos.</p>
             </div>
             <div className="feature">
-              <FaUserCheck size={40} color="#3498db" />
+              <FaUserCheck size={40} color="#42B5FC" />
               <h3>Automatización</h3>
               <p>El sistema notifica a contactos de emergencia y gestiona el envío de mensajes y esquelas.</p>
             </div>
             <div className="feature">
-              <FaCloud size={40} color="#3498db" />
+              <FaCloud size={40} color="#42B5FC" />
               <h3>Personalización</h3>
               <p>Ofrecemos la posibilidad de personalizar mensajes y esquelas con fotos, videos y datos del funeral.</p>
             </div>
@@ -65,7 +72,7 @@ const Home = () => {
         <div className="container">
           <h2>¿Quiénes somos?</h2>
           <p>
-            En CARONTE, somos un equipo comprometido en facilitar la gestión de la despedida digital. Nuestra plataforma está diseñada 
+            En CARONTE, somos un equipo comprometido en facilitar la gestión de la despedida digital. Nuestra plataforma está diseñada
             para asegurar que los mensajes y esquelas sean enviados de manera organizada, respetando la voluntad del usuario.
           </p>
         </div>
