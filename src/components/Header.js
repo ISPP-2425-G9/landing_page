@@ -30,11 +30,6 @@ const Header = () => {
             <li><Link to="/contact" onClick={toggleMenu}>Contacto</Link></li>
           </ul>
         </nav>
-
-        <div className="auth-buttons">
-          <Link to="#" className="btn-login">Inicia sesión</Link>
-          <Link to="#" className="btn-register">Regístrate</Link>
-        </div>
       </div>
     </header>
   );
