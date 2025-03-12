@@ -49,6 +49,10 @@ nav ul li a {
   font-weight: bold;
 }
 
+nav ul li a:hover {
+  color: #42b5fc;
+}
+
 
 /* Burger menu */
 @media (max-width: 768px) {
@@ -171,6 +175,10 @@ nav ul li a {
   font-family: inherit;
 }
 
+.versions-toggle:hover {
+  color: #42b5fc;
+}
+
 /* Dropdown centrado respecto al botón "Versiones" */
 .versions-menu {
   position: absolute;
@@ -178,12 +186,12 @@ nav ul li a {
   left: 50%;
   transform: translateX(-50%) translateY(-20px);
   background-color: #434343;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 10px 0;
   min-width: 120px;
   visibility: hidden;
   opacity: 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 0px #42b5fc; 
   z-index: 1000;
   transition: opacity 0.3s ease, transform 0.3s ease;
   display: flex;
@@ -210,10 +218,6 @@ nav ul li a {
   font-size: inherit;
   text-align: center;
   white-space: nowrap;
-}
-
-.versions-menu:hover {
-  background-color: #42b5fc;
 }
 
 /* Styles for mobile devices */
