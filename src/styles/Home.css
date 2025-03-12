@@ -97,7 +97,7 @@
   font-size: 1.4rem; /* Tamaño de fuente más grande para resaltar */
   color: #434343;
   line-height: 1.6; /* Mayor espacio entre líneas para legibilidad */
-  margin: 20px auto; /* Más margen para separar del resto del contenido */
+  margin: 2% 10%; /* Más margen para separar del resto del contenido */
   max-width: 1600px;
   border: 1px solid #434343; /* Borde más grueso y visible */
   border-radius: 20px; /* Bordes redondeados para un diseño moderno */
