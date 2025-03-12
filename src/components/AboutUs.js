@@ -11,7 +11,7 @@ const teamMembers = [
   { name: "Juan García Carballo", role: "Coordinador de Frontend y Desarrollador Full-Stack", image: "/team/juan.png", hobbies: "Amante de los libros y el cine." },
   { name: "Ángel García Escudero", role: "DevRel y Desarrollador Backend", image: "/team/angel.png", hobbies: "Apasionado por la aviación, el deporte y mundo del motorsport." },
   { name: "Andrés Francisco García Rivero", role: "Desarrollador Frontend", image: "/team/andres.png", hobbies: "Apasionado por el motorsport y la electrónica." },
-  { name: "David Guillén Fernández", role: "Desarrollador Backend", image: "/team/david.png", hobbies: "Apasionado del deporte y la programación." },
+  { name: "David Guillén Fernández", role: "Desarrollador Backend y Especialista en Marketing", image: "/team/david.png", hobbies: "Apasionado del deporte y la programación." },
   { name: "Lucas Manuel Herencia Solís", role: "Desarrollador Backend", image: "/team/lucas.png", hobbies: "Amante de Java." },
   { name: "Jaime Linares Barrera", role: "Coordinador de Frontend y Desarrollador Frontend", image: "/team/jaime.png", hobbies: "Fanático del fútbol y apasionado de la inteligencia artificial." },
   { name: "Jorge Muñoz Rodríguez", role: "Coordinador de Backend y Desarrollador DevOps", image: "/team/jorge.png", hobbies: "Apasionado por la tecnología y los coches." },
