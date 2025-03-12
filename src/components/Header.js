@@ -4,9 +4,14 @@ import "../styles/Header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [versionsOpen, setVersionsOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleVersions = (e) => {
+    setVersionsOpen(!versionsOpen);
   };
 
   return (
@@ -24,10 +29,18 @@ const Header = () => {
 
         <nav className={menuOpen ? "open" : "desktop-menu"}>
           <ul>
-            <li><Link to="/" onClick={toggleMenu}>Inicio</Link></li>
-            <li><Link to="/services" onClick={toggleMenu}>Servicios</Link></li>
-            <li><Link to="/about" onClick={toggleMenu}>Sobre nosotros</Link></li>
-            <li><Link to="/contact" onClick={toggleMenu}>Contacto</Link></li>
+            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/services">Servicios</Link></li>
+            <li><Link to="/about">Sobre nosotros</Link></li>
+            <li><Link to="/contact">Contacto</Link></li>
+            <li className="versions-dropdown">
+              <button onClick={toggleVersions} className="versions-toggle">
+                Versiones ▾
+              </button>
+              <ul className={`versions-menu ${versionsOpen ? 'show' : ''}`}>
+                <li><a href="http://sprint1.caronte.site" target="_blank" rel="noopener noreferrer">Sprint 1</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
