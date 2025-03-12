@@ -21,6 +21,7 @@ const Header = () => {
           src={`${process.env.PUBLIC_URL}/caronte_blanco.svg`}
           alt="Logo de Caronte"
           className="logo"
+          onClick={() => window.location.href = "/"}
         />
 
         <button className="menu-toggle" onClick={toggleMenu}>
