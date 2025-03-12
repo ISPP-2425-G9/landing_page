@@ -10,8 +10,8 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleVersions = (e) => {
-    setVersionsOpen(!versionsOpen);
+  const handleVersionsClick = () => {
+    setVersionsOpen(currentState => !currentState);
   };
 
   return (
@@ -34,8 +34,12 @@ const Header = () => {
             <li><Link to="/about">Sobre nosotros</Link></li>
             <li><Link to="/contact">Contacto</Link></li>
             <li className="versions-dropdown">
-              <button onClick={toggleVersions} className="versions-toggle">
-                Versiones ▾
+              <button 
+                type="button"
+                onClick={handleVersionsClick} 
+                className="versions-toggle"
+              >
+                Versiones {versionsOpen ? '▴' : '▾'}
               </button>
               <ul className={`versions-menu ${versionsOpen ? 'show' : ''}`}>
                 <li><a href="http://sprint1.caronte.site" target="_blank" rel="noopener noreferrer">Sprint 1</a></li>
