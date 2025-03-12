@@ -4,21 +4,21 @@ import "../styles/AboutUs.css";
 
 
 const teamMembers = [
-  { name: "Hugo Angulo Borrego", role: "Desarrollador Full-Stack", image: "/team/hugo.png", hobbies: "Amante de la tecnología y los gatos." },
-  { name: "Álvaro Chico Castellano", role: "Desarrollador Full-Stack", image: "/team/alvaro.png", hobbies: "Apasionado de la ingeniería software e interesado en la inteligencia artificial." },
-  { name: "Rafael Duque Colete", role: "Desarrollador Full-Stack", image: "/team/rafael.png", hobbies: "Le encanta el ciclismo y la robótica." },
-  { name: "Daniel Galván Cancio", role: "Desarrollador Full-Stack", image: "/team/daniel.png", hobbies: "Apasionado de nuevos retos tecnológicos." },
-  { name: "Juan García Carballo", role: "Desarrollador Full-Stack", image: "/team/juan.png", hobbies: "Fan de la música rock y los escape rooms." },
-  { name: "Ángel García Escudero", role: "Desarrollador Full-Stack", image: "/team/angel.png", hobbies: "Apasionado del cine y la inteligencia artificial." },
-  { name: "Andrés Francisco García Rivero", role: "Desarrollador Full-Stack", image: "/team/andres.png", hobbies: "Jugador de ajedrez y aficionado a la astronomía." },
-  { name: "David Guillén Fernández", role: "Desarrollador Full-Stack", image: "/team/david.png", hobbies: "Apasionado del deporte y la programación." },
-  { name: "Lucas Manuel Herencia Solís", role: "Desarrollador Full-Stack", image: "/team/lucas.png", hobbies: "Amante de Java." },
-  { name: "Jaime Linares Barrera", role: "Desarrollador Full-Stack", image: "/team/jaime.png", hobbies: "Fanático del fútbol y apasionado de la inteligencia artificial." },
-  { name: "Jorge Muñoz Rodríguez", role: "Desarrollador Full-Stack", image: "/team/jorge.png", hobbies: "Le encanta el baloncesto y los drones." },
-  { name: "Alejandro Pérez Santiago", role: "Desarrollador Full-Stack", image: "/team/alejandro.png", hobbies: "Aficionado a la escalada y la programación creativa." },
-  { name: "Javier Rodríguez Reina", role: "Desarrollador Full-Stack", image: "/team/javier.png", hobbies: "Le gusta la literatura y los juegos de estrategia." },
-  { name: "Isaac Solís Padilla", role: "Desarrollador Full-Stack", image: "/team/isaac.png", hobbies: "Fan del automovilismo y los eSports." },
-  { name: "Karim Youssafi Benichikh", role: "Desarrollador Full-Stack", image: "/team/karim.png", hobbies: "Interesado en el arte digital y la inteligencia artificial." },
+  { name: "Hugo Angulo Borrego", role: "Desarrollador Frontend", image: "/team/hugo.png", hobbies: "Amante de la tecnología y los gatos." },
+  { name: "Álvaro Chico Castellano", role: "Desarrollador Frontend y Especialista en Marketing", image: "/team/alvaro.png", hobbies: "Apasionado de la ingeniería software e interesado en la inteligencia artificial." },
+  { name: "Rafael Duque Colete", role: "Desarrollador Frontend", image: "/team/rafael.png", hobbies: "Amante del fútbol, el deporte y las buenas series." },
+  { name: "Daniel Galván Cancio", role: "Coordinador de Marketing y Desarrollador Frontend", image: "/team/daniel.png", hobbies: "Apasionado de nuevos retos tecnológicos." },
+  { name: "Juan García Carballo", role: "Coordinador de Frontend y Desarrollador Full-Stack", image: "/team/juan.png", hobbies: "Amante de los libros y el cine." },
+  { name: "Ángel García Escudero", role: "DevRel y Desarrollador Backend", image: "/team/angel.png", hobbies: "Apasionado por la aviación, el deporte y mundo del motorsport." },
+  { name: "Andrés Francisco García Rivero", role: "Desarrollador Frontend", image: "/team/andres.png", hobbies: "Apasionado por el motorsport y la electrónica." },
+  { name: "David Guillén Fernández", role: "Desarrollador Backend", image: "/team/david.png", hobbies: "Apasionado del deporte y la programación." },
+  { name: "Lucas Manuel Herencia Solís", role: "Desarrollador Backend", image: "/team/lucas.png", hobbies: "Amante de Java." },
+  { name: "Jaime Linares Barrera", role: "Coordinador de Frontend y Desarrollador Frontend", image: "/team/jaime.png", hobbies: "Fanático del fútbol y apasionado de la inteligencia artificial." },
+  { name: "Jorge Muñoz Rodríguez", role: "Coordinador de Backend y Desarrollador DevOps", image: "/team/jorge.png", hobbies: "Apasionado por la tecnología y los coches." },
+  { name: "Alejandro Pérez Santiago", role: "Desarrollador DevOps", image: "/team/alejandro.png", hobbies: "Apasionado por la tecnología, siempre enfocado en la mejora continua y en afrontar nuevos retos." },
+  { name: "Javier Rodríguez Reina", role: "Desarrollador Backend", image: "/team/javier.png", hobbies: "Le gusta la literatura y los juegos de estrategia." },
+  { name: "Isaac Solís Padilla", role: "Desarrollador Backend", image: "/team/isaac.png", hobbies: "Amante de los videojuegos." },
+  { name: "Karim Youssafi Benichikh", role: "Desarrollador Frontend y Especialista en Marketing", image: "/team/karim.png", hobbies: "Amante de la tecnología y la inteligencia artificial." },
 ];
 
 
