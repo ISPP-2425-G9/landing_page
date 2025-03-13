@@ -65,14 +65,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="about-us">
-        <div className="container">
-          <h2>¿Quiénes somos?</h2>
-          <p>
-            En CARONTE, somos un equipo apasionado por facilitar la despedida digital. Trabajamos para que cada mensaje sea entregado de forma organizada, respetando siempre tu voluntad.
-          </p>
-        </div>
-      </section>
+    <br /><br /><br /><br />
     </div>
   );
 };
