@@ -8,12 +8,7 @@
   margin-bottom: 10px;
 }
 
-.contact-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.contact-info p {
+.contact p {
   font-size: 1.2rem;
   color: #555;
   max-width: 600px;
@@ -21,18 +16,94 @@
   line-height: 1.6;
 }
 
+/* Detalles de contacto: mapa y formulario */
 .contact-details {
-  text-align: left;
-  max-width: 600px;
-  margin: auto;
-  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-map,
+.contact-form {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+/* Títulos para cada sección */
+.contact-map h3,
+.contact-form h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Estilo para el mapa */
+.map-container {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px; /* Puedes ajustar la altura según necesites */
+  border: 0;
+}
+
+/* Formulario de contacto */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #42B5FC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #3a9dff;
+}
+
+/* Información extra (email y teléfono) */
+.contact-info-extra {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
 }
 
 .contact-item .icon {
@@ -55,6 +126,7 @@
   text-decoration: underline;
 }
 
+/* Redes sociales */
 .social-media {
   margin-top: 30px;
 }
@@ -83,16 +155,20 @@
   animation: pop 0.5s ease;
 }
 
-.map-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.map-container iframe {
-  width: 100%;
-  height: 300px; /* Ajusta la altura según necesites */
-  border: 0;
+  /* Establece un ancho máximo fijo para que mapa y formulario sean iguales */
+  .contact-map,
+  .contact-form {
+    flex: 1 1 100%;
+    max-width: 300px;  /* Este valor se ajusta al ancho que quieres */
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 

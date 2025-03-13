@@ -10,46 +10,64 @@ import {
 import "../styles/Contact.css";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Aquí puedes añadir la lógica para enviar el formulario (por ejemplo, a un backend o servicio de email)
+    console.log("Formulario enviado");
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="container">
         <h2>Contáctanos</h2>
+        <p>
+          ¿Tienes algo que comentarnos? Estamos aquí para ayudarte. Puedes
+          enviarnos un correo electrónico o llamarnos al siguiente número.
+        </p>
 
-        <div className="contact-info">
-          <p>
-            ¿Tienes algo que comentarnos? Estamos aquí para ayudarte. Puedes
-            enviarnos un correo electrónico o llamarnos al siguiente número.
-          </p>
-          <div className="contact-details">
-            <div className="contact-item">
-              <span className="icon">📍</span>
-              <div className="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6342.67312084915!2d-5.989684023552625!3d37.358212536045464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126dd4a3055555%3A0x29c3f634f8a021b8!2sEscuela%20T%C3%A9cnica%20Superior%20de%20Ingenier%C3%ADa%20Inform%C3%A1tica!5e0!3m2!1ses!2ses!4v1741824402518!5m2!1ses!2ses"
-                  width="600"
-                  height="450"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Ubicación"
-                ></iframe>
-              </div>
+        <div className="contact-details">
+          {/* Columna de mapa */}
+          <div className="contact-map">
+            <h3>Ubicación</h3>
+            <div className="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6342.67312084915!2d-5.989684023552625!3d37.358212536045464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126dd4a3055555%3A0x29c3f634f8a021b8!2sEscuela%20T%C3%A9cnica%20Superior%20de%20Ingenier%C3%ADa%20Inform%C3%A1tica!5e0!3m2!1ses!2ses!4v1741824402518!5m2!1ses!2ses"
+                width="600"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación"
+              ></iframe>
             </div>
+          </div>
 
-            <div className="contact-item">
-              <span className="icon">✉️</span>
-              <p>
-                <a href="mailto:info@caronte.site">info@caronte.site</a>
-              </p>
-            </div>
+          {/* Columna de formulario */}
+          <div className="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form onSubmit={handleSubmit}>
+              <input type="text" placeholder="Nombre" required />
+              <input type="email" placeholder="Email" required />
+              <textarea placeholder="Tu mensaje" required></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
 
-            <div className="contact-item">
-              <span className="icon">📞</span>
-              <p>
-                <a href="tel:+34615145215">+34 615 14 52 15</a>
-              </p>
-            </div>
+        <div className="contact-info-extra">
+          <div className="contact-item">
+            <span className="icon">✉️</span>
+            <p>
+              <a href="mailto:info@caronte.site">info@caronte.site</a>
+            </p>
+          </div>
+
+          <div className="contact-item">
+            <span className="icon">📞</span>
+            <p>
+              <a href="tel:+34615145215">+34 615 14 52 15</a>
+            </p>
           </div>
         </div>
 
