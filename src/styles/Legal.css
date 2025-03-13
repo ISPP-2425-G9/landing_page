@@ -1,33 +1,69 @@
+/* Contenedor principal con estilo de tarjeta */
 .legal-section {
-    padding: 60px 20px;
-    text-align: left;
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.6;
-}
-
-.legal-section h2 {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Título principal con separador decorativo */
+  .legal-section h2 {
+    font-size: 2.75rem;
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 2.5rem;
+    color: #333;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .legal-section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #42B5FC;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  
+  /* Párrafos con buena legibilidad */
+  .legal-section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #666;
     margin-bottom: 20px;
-}
-
-.legal-section h3 {
-    font-size: 1.8rem;
-    margin-top: 20px;
+  }
+  
+  /* Estilo para las secciones de título (subtítulos) */
+  .legal-section h3 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: #42B5FC;
-}
-
-.legal-section p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.legal-section a {
-    color: #434343;
+    border-left: 4px solid #42B5FC;
+    padding-left: 10px;
+  }
+  
+  /* Estilo para enlaces con transición */
+  .legal-section a {
+    color: #42B5FC;
     text-decoration: none;
-}
-
-.legal-section a:hover {
+    transition: color 0.3s ease;
+  }
+  
+  .legal-section a:hover {
+    color: #1a8cd8;
     text-decoration: underline;
-}
+  }
+  
+  /* Información de actualización centrada y con estilo sutil */
+  .legal-section .update-info {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+    margin-top: 30px;
+  }
+  

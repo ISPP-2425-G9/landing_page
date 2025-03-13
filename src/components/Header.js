@@ -21,6 +21,7 @@ const Header = () => {
           src={`${process.env.PUBLIC_URL}/caronte_blanco.svg`}
           alt="Logo de Caronte"
           className="logo"
+          onClick={() => window.location.href = "/"}
         />
 
         <button className="menu-toggle" onClick={toggleMenu}>
@@ -42,7 +43,7 @@ const Header = () => {
                 Versiones {versionsOpen ? '▴' : '▾'}
               </button>
               <ul className={`versions-menu ${versionsOpen ? 'show' : ''}`}>
-                <li><a href="//sprint1.caronte.site" target="_blank" rel="noopener noreferrer">Sprint 1</a></li>
+                <li><a href="//sprint1.caronte.site" target="_blank" rel="noreferrer">Sprint 1</a></li>
               </ul>
             </li>
           </ul>
