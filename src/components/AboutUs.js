@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import "../styles/AboutUs.css";
-
-
 
 const teamMembers = [
   { name: "Hugo Angulo Borrego", role: "Desarrollador Frontend", image: "/team/hugo.png", hobbies: "Amante de la tecnología y los gatos." },
@@ -21,25 +19,57 @@ const teamMembers = [
   { name: "Karim Youssafi Benichikh", role: "Desarrollador Frontend y Especialista en Marketing", image: "/team/karim.png", hobbies: "Amante de la tecnología y la inteligencia artificial." },
 ];
 
-
 const AboutUs = () => {
+  useEffect(() => {
+
+    setTimeout(() => {
+      const mainTitle = document.querySelector('.main-title');
+      if (mainTitle) mainTitle.classList.add('fade-in');
+    }, 100);
+
+    setTimeout(() => {
+      const subtitle = document.querySelector('.subtitle');
+      if (subtitle) subtitle.classList.add('fade-in');
+    }, 200);
+
+    setTimeout(() => {
+      const introText = document.querySelector('.intro-text-container');
+      if (introText) introText.classList.add('fade-in');
+    }, 500);
+
+    setTimeout(() => {
+      const teamIntro = document.querySelector('.team-intro');
+      if (teamIntro) teamIntro.classList.add('fade-in');
+    }, 800);
+
+    setTimeout(() => {
+      const members = document.querySelectorAll('.team-member');
+      members.forEach((member, index) => {
+        setTimeout(() => {
+          member.classList.add('member-fade-in');
+        }, 200 * index);
+      });
+    }, 1000);
+  }, []);
+
   return (
     <section id="about" className="about-us">
       <div className="container">
-        <h2>Sobre nosotros</h2>
-        <h3>Conoce al equipo detrás de CARONTE</h3>
+        <h2 className="main-title">Sobre nosotros</h2>
+        <h3 className="subtitle">Conoce al equipo detrás de CARONTE</h3>
         <br></br>
-        <p className="intro">
-          <strong>CARONTE</strong> nace como una solución digital innovadora en la <strong>Universidad de Sevilla</strong>, dentro de la asignatura 
-          de Ingeniería del Software y Práctica Profesional. Nuestra misión es revolucionar la manera en la que las personas pueden <strong>dejar su legado digital</strong>,
-          asegurando que sus últimas palabras y mensajes sean entregados en el momento preciso.
-        </p>
-        <p className="intro">
-          Detrás de <strong>CARONTE</strong> hay un equipo de <strong>15 desarrolladores apasionados</strong> que han trabajado para hacer de esta idea una realidad. 
-          Nuestro equipo está especializado en desarrollo full-stack, asegurando que la experiencia del usuario sea fluida y eficiente.  
-        </p>
-        <p style={{ textAlign: "center" }}>▼ Aquí te presentamos a los miembros que hacen esto posible ▼</p>
-
+        <div className="intro-text-container">
+          <p className="intro">
+            <strong>CARONTE</strong> nace como una solución digital innovadora en la <strong>Universidad de Sevilla</strong>, dentro de la asignatura 
+            de Ingeniería del Software y Práctica Profesional. Nuestra misión es revolucionar la manera en la que las personas pueden <strong>dejar su legado digital</strong>,
+            asegurando que sus últimas palabras y mensajes sean entregados en el momento preciso.
+          </p>
+          <p className="intro">
+            Detrás de <strong>CARONTE</strong> hay un equipo de <strong>15 desarrolladores apasionados</strong> que han trabajado para hacer de esta idea una realidad. 
+            Nuestro equipo está especializado en desarrollo full-stack, asegurando que la experiencia del usuario sea fluida y eficiente.  
+          </p>
+        </div>
+        <p className="team-intro" style={{ textAlign: "center" }}>▼ Aquí te presentamos a los miembros que hacen esto posible ▼</p>
         <div className="team-grid">
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member">
@@ -54,6 +84,5 @@ const AboutUs = () => {
     </section>
   );
 };
-
 
 export default AboutUs;

@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaBusinessTime, FaCalendarCheck, FaRegAddressBook } from "react-icons/fa";
 import "../styles/Services.css";
-
-
 
 const servicesData = [
   {
@@ -29,6 +27,32 @@ const servicesData = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    const title = document.querySelector('.services h2');
+    if (title) {
+      title.classList.add('title-animation');
+      setTimeout(() => {
+        title.classList.add('title-visible');
+      }, 100);
+    }
+
+    const subtitle = document.querySelector('.services h3');
+    if (subtitle) {
+      subtitle.classList.add('subtitle-animation');
+      setTimeout(() => {
+        subtitle.classList.add('subtitle-visible');
+      }, 200);
+    }
+
+    const services = document.querySelectorAll('.service-wrapper');
+    services.forEach((service, index) => {
+      service.classList.add('service-animation');
+      setTimeout(() => {
+        service.classList.add('service-visible');
+      }, 200 + (300 * index));
+    });
+  }, []);
+
   return (
     <section id="services" className="services">
       <div className="container">
@@ -37,12 +61,14 @@ const Services = () => {
 
         <div className="service-grid">
           {servicesData.map((service, index) => (
-            <div className={`service ${service.type}`} key={index}>
-              <div className="icon">{service.icon}</div>
-              {service.type === "company" && <span className="badge">Empresas</span>}
-              <h3>{service.title}</h3>
-              <p style={{ textAlign: "center" }}>{service.description}</p>
-              <p className="price">{service.price}</p>
+            <div className="service-wrapper" key={index} style={{ transition: 'opacity 1s ease-in-out, transform 1s ease-in-out' }}>
+              <div className={`service ${service.type}`}>
+                <div className="icon">{service.icon}</div>
+                {service.type === "company" && <span className="badge">Empresas</span>}
+                <h3>{service.title}</h3>
+                <p style={{ textAlign: "center" }}>{service.description}</p>
+                <p className="price">{service.price}</p>
+              </div>
             </div>
           ))}
         </div>
