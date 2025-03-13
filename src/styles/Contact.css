@@ -1,3 +1,4 @@
+/* Contact Section */
 .contact {
   padding: 60px 20px;
   text-align: center;
@@ -45,7 +46,9 @@
   overflow: hidden;
 }
 
+/* Ensure iframe fills the container */
 .map-container iframe {
+  display: block;
   width: 100%;
   height: 100%;
   border: 0;
@@ -142,15 +145,9 @@
 }
 
 @keyframes pop {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
 }
 
 .social-icons a:hover {
@@ -170,5 +167,10 @@
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
+  }
+  
+  /* Fix for map white stripe on mobile */
+  .map-container {
+    height: 300px;
   }
 }
