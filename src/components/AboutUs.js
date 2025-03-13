@@ -49,7 +49,7 @@ const AboutUs = () => {
           member.classList.add('member-fade-in');
         }, 200 * index);
       });
-    }, 5000);
+    }, 4000);
   }, []);
 
   return (
