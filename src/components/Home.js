@@ -4,7 +4,7 @@ import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";
 
 const Home = () => {
   useEffect(() => {
-
+    // Animación inicial del hero
     const title = document.querySelector('.hero-title');
     const subtitle = document.querySelector('.hero-subtitle');
     
@@ -14,12 +14,43 @@ const Home = () => {
       }
     }, 500); 
     
-
     setTimeout(() => {
       if (subtitle) {
         subtitle.classList.add('fade-in');
       }
-    }, 1500); 
+    }, 1500);
+
+    // Efecto de scroll para la sección "Qué hacemos"
+    const handleScroll = () => {
+      const infoSection = document.querySelector('.caronte-info-container');
+      if (!infoSection) return;
+
+      const rect = infoSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      const distanceFromCenter = (windowHeight / 2) - (rect.top + rect.height / 2);
+      const maxDistance = windowHeight / 2 + rect.height / 2;
+      
+      const scrollProgress = Math.max(-1, Math.min(1, distanceFromCenter / maxDistance));
+      
+      const scale = 0.8 + Math.abs(scrollProgress) * 0.4; 
+      const translateY = scrollProgress * 30; 
+      const opacity = 0.5 + Math.abs(scrollProgress) * 0.5; 
+      
+      infoSection.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+      infoSection.style.opacity = opacity;
+
+      if (Math.abs(scrollProgress) > 0.2) {
+        infoSection.classList.add('in-view');
+      } else {
+        infoSection.classList.remove('in-view');
+      }
+    };
+
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
