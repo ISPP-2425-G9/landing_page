@@ -12,8 +12,15 @@ import "../styles/Contact.css";
 const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes añadir la lógica para enviar el formulario (por ejemplo, a un backend o servicio de email)
-    console.log("Formulario enviado");
+    const formData = new FormData(e.target);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+    const subject = `Mensaje de ${name} (${email})`;
+    const body = encodeURIComponent(message);
+    window.location.href = `mailto:info@caronte.site?subject=${encodeURIComponent(
+      subject
+    )}&body=${body}`;
   };
 
   return (
@@ -26,7 +33,6 @@ const Contact = () => {
         </p>
 
         <div className="contact-details">
-          {/* Columna de mapa */}
           <div className="contact-map">
             <h3>Ubicación</h3>
             <div className="map-container">
@@ -43,13 +49,16 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Columna de formulario */}
           <div className="contact-form">
             <h3>Envíanos un mensaje</h3>
             <form onSubmit={handleSubmit}>
-              <input type="text" placeholder="Nombre" required />
-              <input type="email" placeholder="Email" required />
-              <textarea placeholder="Tu mensaje" required></textarea>
+              <input type="text" name="name" placeholder="Nombre" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="message"
+                placeholder="Tu mensaje"
+                required
+              ></textarea>
               <button type="submit">Enviar</button>
             </form>
           </div>
