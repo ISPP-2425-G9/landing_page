@@ -41,7 +41,7 @@ const Terms = () => {
           Si continúas utilizando CARONTE después de una actualización, se considerará que aceptas los cambios.
         </p>
 
-        <p style={{ textAlign: "center" }}>Última actualización: Febrero 2025</p>
+        <p className="update-info">Última actualización: Febrero 2025</p>
       </div>
     </section>
   );

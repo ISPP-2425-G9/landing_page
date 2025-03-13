@@ -29,7 +29,6 @@ const AboutUs = () => {
         <h2>Sobre nosotros</h2>
         <h3>Conoce al equipo detrás de CARONTE</h3>
         <br></br>
-        <h1>¿Quiénes son los miembros del equipo CARONTE?</h1>
         <p className="intro">
           <strong>CARONTE</strong> nace como una solución digital innovadora en la <strong>Universidad de Sevilla</strong>, dentro de la asignatura 
           de Ingeniería del Software y Práctica Profesional. Nuestra misión es revolucionar la manera en la que las personas pueden <strong>dejar su legado digital</strong>,
@@ -39,7 +38,7 @@ const AboutUs = () => {
           Detrás de <strong>CARONTE</strong> hay un equipo de <strong>15 desarrolladores apasionados</strong> que han trabajado para hacer de esta idea una realidad. 
           Nuestro equipo está especializado en desarrollo full-stack, asegurando que la experiencia del usuario sea fluida y eficiente.  
         </p>
-        <p style={{ textAlign: "center" }}>👇 Aquí te presentamos a los miembros que hacen esto posible 👇</p>
+        <p style={{ textAlign: "center" }}>▼ Aquí te presentamos a los miembros que hacen esto posible ▼</p>
 
         <div className="team-grid">
           {teamMembers.map((member, index) => (
