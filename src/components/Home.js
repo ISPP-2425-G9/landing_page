@@ -12,13 +12,13 @@ const Home = () => {
       if (title) {
         title.classList.add('fade-in');
       }
-    }, 500); 
+    }, 100); 
     
     setTimeout(() => {
       if (subtitle) {
         subtitle.classList.add('fade-in');
       }
-    }, 1500);
+    }, 1000);
 
     // Efecto de scroll para la sección "Qué hacemos"
     const handleScroll = () => {
