@@ -39,7 +39,7 @@ const AboutUs = () => {
           Detrás de <strong>CARONTE</strong> hay un equipo de <strong>15 desarrolladores apasionados</strong> que han trabajado para hacer de esta idea una realidad. 
           Nuestro equipo está especializado en desarrollo full-stack, asegurando que la experiencia del usuario sea fluida y eficiente.  
         </p>
-        <p style={{ textAlign: "center" }}>👇 Aquí te presentamos a los miembros que hacen esto posible 👇</p>
+        <p style={{ textAlign: "center" }}>▼ Aquí te presentamos a los miembros que hacen esto posible ▼</p>
 
         <div className="team-grid">
           {teamMembers.map((member, index) => (
