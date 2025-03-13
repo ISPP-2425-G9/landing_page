@@ -8,10 +8,8 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <h2>Contáctanos</h2>
-        <p>Estamos aquí para ayudarte y resolver tus dudas</p>
 
         <div className="contact-info">
-          <h3>Contacta con CARONTE</h3>
           <p>¿Tienes algo que comentarnos? Estamos aquí para ayudarte. Puedes enviarnos un correo electrónico o llamarnos al siguiente número.</p>
 
           <div className="contact-details">
