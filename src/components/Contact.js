@@ -28,8 +28,9 @@ const Contact = () => {
       <div className="container">
         <h2>Contáctanos</h2>
         <p>
-          ¿Tienes algo que comentarnos? Estamos aquí para ayudarte. Puedes
-          enviarnos un correo electrónico o llamarnos al siguiente número.
+          ¿Tienes alguna duda, sugerencia o simplemente quieres saludarnos? 
+          <br />
+          No dudes en ponerte en contacto con nosotros.
         </p>
 
         <div className="contact-details">

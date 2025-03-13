@@ -16,30 +16,28 @@
   line-height: 1.6;
 }
 
-/* Contenedor que agrupa mapa y formulario */
+/* Contact Details Container */
 .contact-details {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Estira ambos hijos al mismo alto */
+  align-items: stretch;
   gap: 30px;
   margin-top: 30px;
-  /* Si deseas evitar wrap en desktop, puedes quitar flex-wrap; en móvil se ajusta con media queries */
 }
 
-/* Para que ambos bloques se comporten de manera similar */
+/* Map and Form Blocks */
 .contact-map,
 .contact-form {
   flex: 1 1 45%;
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  /* Define una altura mínima para que ambos sean iguales si su contenido es menor */
-  min-height: 350px; /* Ajusta este valor según tus necesidades */
+  min-height: 350px;
 }
 
-/* En el contenedor del mapa, hacemos que el iframe se expanda */
+/* Map Container */
 .map-container {
-  flex-grow: 1;  /* Ocupa el espacio vertical disponible */
+  flex-grow: 1;
   width: 100%;
   margin: 0 auto;
   border: 2px solid #ddd;
@@ -53,16 +51,15 @@
   border: 0;
 }
 
-/* Formulario de contacto */
+/* Contact Form */
 .contact-form form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: stretch;
-  flex-grow: 1; /* Ocupa el espacio disponible */
+  flex-grow: 1;
 }
 
-/* Los inputs y textarea ya usan width: 100% */
 .contact-form input,
 .contact-form textarea {
   padding: 10px;
@@ -73,7 +70,10 @@
   box-sizing: border-box;
 }
 
-/* El botón se empuja hacia abajo para quedar al mismo nivel que el mapa */
+.contact-form form textarea {
+  flex-grow: 1;
+}
+
 .contact-form button {
   display: block;
   width: 100%;
@@ -86,19 +86,14 @@
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: auto; /* Empuja el botón al fondo */
-}
-
-.contact-form form textarea {
-  flex-grow: 1;
+  margin-top: auto;
 }
 
 .contact-form button:hover {
   background-color: #3a9dff;
 }
 
-
-/* Información extra (email y teléfono) */
+/* Extra Contact Info (Email and Phone) */
 .contact-info-extra {
   margin-top: 30px;
   display: flex;
@@ -133,7 +128,7 @@
   text-decoration: underline;
 }
 
-/* Redes sociales */
+/* Social Media */
 .social-media {
   margin-top: 30px;
 }
@@ -162,20 +157,18 @@
   animation: pop 0.5s ease;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .contact-details {
     flex-direction: column;
     align-items: center;
   }
-
-  /* Establece un ancho máximo fijo para que mapa y formulario sean iguales */
+  
   .contact-map,
   .contact-form {
     flex: 1 1 100%;
-    max-width: 300px;  /* Este valor se ajusta al ancho que quieres */
+    max-width: 300px;
     width: 100%;
     margin: 0 auto;
   }
 }
-
-
