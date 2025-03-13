@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Home.css";
 import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";
 
 const Home = () => {
+  useEffect(() => {
+
+    const title = document.querySelector('.hero-title');
+    const subtitle = document.querySelector('.hero-subtitle');
+    
+    setTimeout(() => {
+      if (title) {
+        title.classList.add('fade-in');
+      }
+    }, 500); 
+    
+
+    setTimeout(() => {
+      if (subtitle) {
+        subtitle.classList.add('fade-in');
+      }
+    }, 1500); 
+  }, []);
+
   return (
     <div className="home-container">
       <section className="hero">
