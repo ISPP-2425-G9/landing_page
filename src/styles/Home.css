@@ -122,8 +122,8 @@ body, h1, h2, h3, p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center center;
-  opacity: 0.5;
-  transform: scale(0.8);
+  opacity: 1;
+  transform: scale(0.9);
 }
 
 .caronte-info-container.in-view {

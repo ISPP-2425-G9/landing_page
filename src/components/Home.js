@@ -33,12 +33,12 @@ const Home = () => {
       
       const scrollProgress = Math.max(-1, Math.min(1, distanceFromCenter / maxDistance));
       
-      const scale = 0.8 + Math.abs(scrollProgress) * 0.4; 
-      const translateY = scrollProgress * 30; 
-      const opacity = 0.5 + Math.abs(scrollProgress) * 0.5; 
+      const scale = 0.9 + Math.abs(scrollProgress) * 0.2; 
+      const translateY = scrollProgress * 20; 
       
+      // Siempre mantener la opacidad al máximo para evitar la borrosidad
+      infoSection.style.opacity = 1;
       infoSection.style.transform = `scale(${scale}) translateY(${translateY}px)`;
-      infoSection.style.opacity = opacity;
 
       if (Math.abs(scrollProgress) > 0.2) {
         infoSection.classList.add('in-view');
