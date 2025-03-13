@@ -36,6 +36,7 @@ const Contact = () => {
         <div className="contact-details">
           <div className="contact-map">
             <h3>Ubicación</h3>
+            <br />
             <div className="map-container">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6342.67312084915!2d-5.989684023552625!3d37.358212536045464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126dd4a3055555%3A0x29c3f634f8a021b8!2sEscuela%20T%C3%A9cnica%20Superior%20de%20Ingenier%C3%ADa%20Inform%C3%A1tica!5e0!3m2!1ses!2ses!4v1741824402518!5m2!1ses!2ses"
@@ -52,6 +53,7 @@ const Contact = () => {
 
           <div className="contact-form">
             <h3>Envíanos un mensaje</h3>
+            <br />
             <form onSubmit={handleSubmit}>
               <input type="text" name="name" placeholder="Nombre" required />
               <input type="email" name="email" placeholder="Email" required />
@@ -83,6 +85,7 @@ const Contact = () => {
 
         <div className="social-media">
           <h3>Nuestras redes sociales</h3>
+          <br />
           <div className="social-icons">
             <a
               href="https://whatsapp.com/channel/0029Vb8vAcUDzgTBG01Tdw1f"

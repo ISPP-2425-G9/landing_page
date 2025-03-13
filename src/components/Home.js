@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
 import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";
-import logo from "../caronte_gris.png";
 
 const Home = () => {
   return (

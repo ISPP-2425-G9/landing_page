@@ -43,7 +43,7 @@ const Header = () => {
                 Versiones {versionsOpen ? '▴' : '▾'}
               </button>
               <ul className={`versions-menu ${versionsOpen ? 'show' : ''}`}>
-                <li><a href="sprint1.caronte.site" target="_blank">Sprint 1</a></li>
+                <li><a href="//sprint1.caronte.site" target="_blank" rel="noreferrer">Sprint 1</a></li>
               </ul>
             </li>
           </ul>
