@@ -125,7 +125,7 @@
 }
 
 .intro-text-container {
-  transition: opacity 3s ease-out, transform 2.5s ease-out, visibility 3s ease-out;
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out, visibility 1.2s ease-in-out;
 }
 
 .team-intro {

@@ -41,7 +41,7 @@ const Services = () => {
       subtitle.classList.add('subtitle-animation');
       setTimeout(() => {
         subtitle.classList.add('subtitle-visible');
-      }, 400);
+      }, 200);
     }
 
     const services = document.querySelectorAll('.service-wrapper');
@@ -49,7 +49,7 @@ const Services = () => {
       service.classList.add('service-animation');
       setTimeout(() => {
         service.classList.add('service-visible');
-      }, 800 + (300 * index));
+      }, 200 + (300 * index));
     });
   }, []);
 

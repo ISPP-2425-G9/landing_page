@@ -25,7 +25,7 @@ const Contact = () => {
       subtitle.classList.add('contact-subtitle');
       setTimeout(() => {
         subtitle.classList.add('subtitle-visible');
-      }, 500);
+      }, 250);
     }
 
     const content = document.querySelector('.contact-details');
@@ -36,21 +36,21 @@ const Contact = () => {
       content.classList.add('contact-content');
       setTimeout(() => {
         content.classList.add('content-visible');
-      }, 1200);
+      }, 400);
     }
     
     if (extraContent) {
       extraContent.classList.add('contact-content');
       setTimeout(() => {
         extraContent.classList.add('content-visible');
-      }, 1500);
+      }, 800);
     }
     
     if (socialMedia) {
       socialMedia.classList.add('contact-content');
       setTimeout(() => {
         socialMedia.classList.add('content-visible');
-      }, 1800);
+      }, 1000);
     }
   }, []);
 

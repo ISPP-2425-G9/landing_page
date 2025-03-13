@@ -18,7 +18,7 @@ const Home = () => {
       if (subtitle) {
         subtitle.classList.add('fade-in');
       }
-    }, 1000);
+    }, 500);
 
     // Efecto de scroll para la sección "Qué hacemos"
     const handleScroll = () => {

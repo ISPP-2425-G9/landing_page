@@ -30,17 +30,17 @@ const AboutUs = () => {
     setTimeout(() => {
       const subtitle = document.querySelector('.subtitle');
       if (subtitle) subtitle.classList.add('fade-in');
-    }, 500);
+    }, 200);
 
     setTimeout(() => {
       const introText = document.querySelector('.intro-text-container');
       if (introText) introText.classList.add('fade-in');
-    }, 1200);
+    }, 500);
 
     setTimeout(() => {
       const teamIntro = document.querySelector('.team-intro');
       if (teamIntro) teamIntro.classList.add('fade-in');
-    }, 3200);
+    }, 800);
 
     setTimeout(() => {
       const members = document.querySelectorAll('.team-member');
@@ -49,7 +49,7 @@ const AboutUs = () => {
           member.classList.add('member-fade-in');
         }, 200 * index);
       });
-    }, 3800);
+    }, 1000);
   }, []);
 
   return (
