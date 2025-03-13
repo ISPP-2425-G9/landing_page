@@ -15,8 +15,9 @@ body, h1, h2, h3, p {
 }
 
 .home-container {
-  width: 100%;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Hero Section */
