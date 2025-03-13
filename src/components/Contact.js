@@ -17,7 +17,7 @@ const Contact = () => {
       title.classList.add('contact-title');
       setTimeout(() => {
         title.classList.add('title-visible');
-      }, 300);
+      }, 100);
     }
 
     const subtitle = document.querySelector('.contact > .container > p');
@@ -25,7 +25,7 @@ const Contact = () => {
       subtitle.classList.add('contact-subtitle');
       setTimeout(() => {
         subtitle.classList.add('subtitle-visible');
-      }, 800);
+      }, 500);
     }
 
     const content = document.querySelector('.contact-details');
@@ -36,21 +36,21 @@ const Contact = () => {
       content.classList.add('contact-content');
       setTimeout(() => {
         content.classList.add('content-visible');
-      }, 1500);
+      }, 1200);
     }
     
     if (extraContent) {
       extraContent.classList.add('contact-content');
       setTimeout(() => {
         extraContent.classList.add('content-visible');
-      }, 1800);
+      }, 1500);
     }
     
     if (socialMedia) {
       socialMedia.classList.add('contact-content');
       setTimeout(() => {
         socialMedia.classList.add('content-visible');
-      }, 2100);
+      }, 1800);
     }
   }, []);
 
