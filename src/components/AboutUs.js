@@ -29,7 +29,6 @@ const AboutUs = () => {
         <h2>Sobre nosotros</h2>
         <h3>Conoce al equipo detrás de CARONTE</h3>
         <br></br>
-        <h1>¿Quiénes son los miembros del equipo CARONTE?</h1>
         <p className="intro">
           <strong>CARONTE</strong> nace como una solución digital innovadora en la <strong>Universidad de Sevilla</strong>, dentro de la asignatura 
           de Ingeniería del Software y Práctica Profesional. Nuestra misión es revolucionar la manera en la que las personas pueden <strong>dejar su legado digital</strong>,
