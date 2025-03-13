@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import {
   FaInstagram,
@@ -10,6 +10,50 @@ import {
 import "../styles/Contact.css";
 
 const Contact = () => {
+  useEffect(() => {
+
+    const title = document.querySelector('.contact h2');
+    if (title) {
+      title.classList.add('contact-title');
+      setTimeout(() => {
+        title.classList.add('title-visible');
+      }, 300);
+    }
+
+    const subtitle = document.querySelector('.contact > .container > p');
+    if (subtitle) {
+      subtitle.classList.add('contact-subtitle');
+      setTimeout(() => {
+        subtitle.classList.add('subtitle-visible');
+      }, 800);
+    }
+
+    const content = document.querySelector('.contact-details');
+    const extraContent = document.querySelector('.contact-info-extra');
+    const socialMedia = document.querySelector('.social-media');
+    
+    if (content) {
+      content.classList.add('contact-content');
+      setTimeout(() => {
+        content.classList.add('content-visible');
+      }, 1500);
+    }
+    
+    if (extraContent) {
+      extraContent.classList.add('contact-content');
+      setTimeout(() => {
+        extraContent.classList.add('content-visible');
+      }, 1800);
+    }
+    
+    if (socialMedia) {
+      socialMedia.classList.add('contact-content');
+      setTimeout(() => {
+        socialMedia.classList.add('content-visible');
+      }, 2100);
+    }
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
