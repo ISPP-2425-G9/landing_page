@@ -1,8 +1,58 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Home.css";
 import { FaShieldAlt, FaHandshake, FaCloud, FaUserCheck } from "react-icons/fa";
 
 const Home = () => {
+  useEffect(() => {
+    // Animación inicial del hero
+    const title = document.querySelector('.hero-title');
+    const subtitle = document.querySelector('.hero-subtitle');
+    
+    setTimeout(() => {
+      if (title) {
+        title.classList.add('fade-in');
+      }
+    }, 100); 
+    
+    setTimeout(() => {
+      if (subtitle) {
+        subtitle.classList.add('fade-in');
+      }
+    }, 500);
+
+    // Efecto de scroll para la sección "Qué hacemos"
+    const handleScroll = () => {
+      const infoSection = document.querySelector('.caronte-info-container');
+      if (!infoSection) return;
+
+      const rect = infoSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      const distanceFromCenter = (windowHeight / 2) - (rect.top + rect.height / 2);
+      const maxDistance = windowHeight / 2 + rect.height / 2;
+      
+      const scrollProgress = Math.max(-1, Math.min(1, distanceFromCenter / maxDistance));
+      
+      const scale = 0.9 + Math.abs(scrollProgress) * 0.2; 
+      const translateY = scrollProgress * 20; 
+      
+      // Siempre mantener la opacidad al máximo para evitar la borrosidad
+      infoSection.style.opacity = 1;
+      infoSection.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+
+      if (Math.abs(scrollProgress) > 0.2) {
+        infoSection.classList.add('in-view');
+      } else {
+        infoSection.classList.remove('in-view');
+      }
+    };
+
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="home-container">
       <section className="hero">

@@ -39,13 +39,20 @@ body, h1, h2, h3, p {
 
 .hero-title {
   font-size: 4rem;
-  font-weight: bold;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  visibility: hidden;
 }
 
 .hero-subtitle {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 10px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  visibility: hidden;
 }
 
 .highlight {
@@ -78,6 +85,24 @@ body, h1, h2, h3, p {
   margin: 0 auto;
 }
 
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  visibility: visible !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
 
 /* Caronte Info Section */
 .caronte-info {
@@ -85,6 +110,7 @@ body, h1, h2, h3, p {
   background: var(--light-color);
   color: var(--dark-color);
   text-align: center;
+  perspective: 1000px;
 }
 
 .caronte-info-container {
@@ -94,17 +120,48 @@ body, h1, h2, h3, p {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center center;
+  opacity: 1;
+  transform: scale(0.9);
+}
+
+.caronte-info-container.in-view {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .caronte-info-container h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .caronte-info-container p {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateZ(0);
+}
+
+.caronte-info-container.in-view p {
+  transform: translateZ(20px);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.caronte-info-container.in-view h2 {
+  animation: float 3s ease-in-out infinite;
 }
 
 /* Why Choose Us Section */
