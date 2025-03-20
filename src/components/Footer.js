@@ -16,7 +16,7 @@ const Footer = () => {
           <p>&copy; 2025 CARONTE. Todos los derechos reservados.</p>
           <p>Realizado por ISPP 2024-2025 G9</p>
           <p>
-            <a href="/terms">Términos y condiciones de uso</a> | <a href="/privacy">Política de privacidad</a>
+            <a href="/terms">Términos y condiciones de uso</a>
           </p>
         </div>
 

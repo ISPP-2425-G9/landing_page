@@ -7,7 +7,6 @@ import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Terms from "./Terms";
-import Privacy from "./Privacy";
 
 
 
@@ -21,7 +20,6 @@ const AppRoutes = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<Terms />} />
-        <Route path="/privacy" element={<Privacy />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
