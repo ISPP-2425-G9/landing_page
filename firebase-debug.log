@@ -1,0 +1,70 @@
+[debug] [2025-03-27T16:12:26.702Z] ----------------------------------------------------------------------
+[debug] [2025-03-27T16:12:26.703Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2025-03-27T16:12:26.704Z] CLI Version:   13.32.0
+[debug] [2025-03-27T16:12:26.704Z] Platform:      linux
+[debug] [2025-03-27T16:12:26.704Z] Node Version:  v20.16.0
+[debug] [2025-03-27T16:12:26.704Z] Time:          Thu Mar 27 2025 17:12:26 GMT+0100 (Central European Standard Time)
+[debug] [2025-03-27T16:12:26.704Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-27T16:12:26.706Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-03-27T16:12:26.866Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-27T16:12:26.866Z] > authorizing via signed-in user (jomuro03@gmail.com)
+[debug] [2025-03-27T16:12:26.866Z] [iam] checking project sixth-spot-451517-f9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-03-27T16:12:26.867Z] Checked if tokens are valid: false, expires at: 1742509040892
+[debug] [2025-03-27T16:12:26.867Z] Checked if tokens are valid: false, expires at: 1742509040892
+[debug] [2025-03-27T16:12:26.867Z] > refreshing access token with scopes: []
+[debug] [2025-03-27T16:12:26.868Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-27T16:12:26.868Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-27T16:12:27.016Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-03-27T16:12:27.017Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-27T16:12:27.028Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sixth-spot-451517-f9:testIamPermissions [none]
+[debug] [2025-03-27T16:12:27.028Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sixth-spot-451517-f9:testIamPermissions x-goog-quota-user=projects/sixth-spot-451517-f9
+[debug] [2025-03-27T16:12:27.028Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sixth-spot-451517-f9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-03-27T16:12:27.132Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-03-27T16:12:27.132Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-03-27T16:12:27.825Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sixth-spot-451517-f9:testIamPermissions 200
+[debug] [2025-03-27T16:12:27.826Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sixth-spot-451517-f9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-03-27T16:12:27.828Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:27.828Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:27.829Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sixth-spot-451517-f9 [none]
+[debug] [2025-03-27T16:12:28.321Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sixth-spot-451517-f9 200
+[debug] [2025-03-27T16:12:28.321Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sixth-spot-451517-f9 {"projectId":"sixth-spot-451517-f9","projectNumber":"1086609249505","displayName":"CARONTE","name":"projects/sixth-spot-451517-f9","resources":{"hostingSite":"sixth-spot-451517-f9","locationId":"europe-west"},"state":"ACTIVE","etag":"1_5e156191-7a63-412a-bb5a-28a6a862468e"}
+[info] 
+[info] === Deploying to 'sixth-spot-451517-f9'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-03-27T16:12:28.332Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:28.332Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:28.332Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/sixth-spot-451517-f9/versions [none]
+[debug] [2025-03-27T16:12:28.332Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/sixth-spot-451517-f9/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-03-27T16:12:30.091Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/sixth-spot-451517-f9/versions 200
+[debug] [2025-03-27T16:12:30.092Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/sixth-spot-451517-f9/versions {"name":"projects/1086609249505/sites/sixth-spot-451517-f9/versions/18c8887159826f90","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[sixth-spot-451517-f9]: beginning deploy... 
+[info] i  hosting[sixth-spot-451517-f9]: found 30 files in build 
+[debug] [2025-03-27T16:12:30.116Z] [hosting] uploading with 200 concurrency
+[debug] [2025-03-27T16:12:30.499Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:30.499Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:30.500Z] [hosting] hash cache [YnVpbGQ] stored for 30 files
+[debug] [2025-03-27T16:12:30.500Z] [hosting][hash queue][FINAL] {"max":377,"min":10,"avg":53.89999999999999,"active":0,"complete":30,"success":30,"errored":0,"retried":0,"total":30,"elapsed":381}
+[debug] [2025-03-27T16:12:30.501Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1086609249505/sites/sixth-spot-451517-f9/versions/18c8887159826f90:populateFiles [none]
+[debug] [2025-03-27T16:12:30.501Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1086609249505/sites/sixth-spot-451517-f9/versions/18c8887159826f90:populateFiles {"files":{"/manifest.json":"d82acdc3ee1988aa3071fa75e788082d560424ddc95b07e8430c88b2d0457b8a","/robots.txt":"2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec","/logo192.png":"76c449ccb9cd117c2f2338f091b18f7050f3210e249b2228f5c81b23f34377cd","/index.html":"933bbb1f0525ff0ab590a8fe283db6c248fdbca8ca3d939c709a6ddfac845dde","/logo512.png":"7779210d56c1f3741e2e487799fe3092def4fa6ac450a60532b807c3a8971205","/asset-manifest.json":"487cc110791e0073fbd0c90345f69d16d6e59e4429ce1bfcbf4ab126068b4740","/_redirects":"c57a2b7c18eb9aec81fb5a12f9b5afad63e1c1802baf1a52ed8f693e714c0f20","/caronte_gris.svg":"13ae36ae5f2175e50f992dfb51c896eb9848930b1bc2b8a7542afdbdab5726f4","/caronte_blanco.svg":"221eb9193169f1a89a32638a0cf71719519b4dc807315a440f1ed86ce11f34cc","/favicon.ico":"76e92e6762c720861430d2af1fa0007b17020d12dd6efd7395600d788b7d9503","/static/js/main.35c5c29b.js.LICENSE.txt":"14342c562c2444915b128ef5d11b5d8b15b361de758d9981caaf94474afcbae9","/static/css/main.4edc598d.css":"9fc854288970345e57e50220815ccbaa9652cb5aef66d767b2bf69e32f156459","/static/css/main.4edc598d.css.map":"967719264a4cc3ae85c4f43045c6fa7a589c7dc6ef35683067a77ed242f7982e","/team/lucas.png":"d0b94ce5c555142dcd197ce1c83509305dc17d6757aa89f6075236966a20d148","/team/isaac.png":"6fa86d3419cfb9a747f7222302c6232659bb067bb349057d74d77fa9c163a952","/team/andres.png":"42a011076a724e3738a5d2de156c0e3b79c6bc1dbb3762c1afff0c223c52723a","/team/karim.png":"4d20802c3891a1f58a5bd864d95d30968410c7ff52b098ab1eef6afd9de4d858","/static/js/main.35c5c29b.js":"6b946ffff99e89188a9eb56c79668cf388456a62fd0a9a75cf4a10ed5fc48fe1","/team/david.png":"70b50034cd2d5a12f7957a1b254bade51ad0d14848316e58b37669cdd7f6ad14","/team/alvaro.png":"276e60aa1c6b23d05c3dfb91f522fc496f6e1974ed12f9609e938f505065daae","/team/jaime.png":"1b90eb19385f50b75ba187a54f51cfd0514db48c50a3d3e2064dff5b363c4709","/team/jorge.png":"6a2bdfe84f7363eb7f56dc1a3c5be73917976fa31d55a81fee6203d240a74d43","/team/rafael.png":"9f64c5bd1ac1e4790690bbcbc7ec0f01a6af4e9c266abb36aa8d391eaa4d43c1","/team/alejandro.png":"9104be253ef9b2bedcef0412978a5cc21eab976a12311d1b2e9db6c7f1f523e8","/team/juan.png":"f60d7638e88f2eb1f8e690b86211a7d2352d48c35c7b648faadd1736052f617b","/team/angel.png":"be62ce7ddc19f551fa22a8711d3b879c355d5bc8f9ecf3ebb4adb35d82125203","/team/daniel.png":"509ca4430f76e1049448180989e4a8f54220a21a5342e3f88f940e5bd12b73d9","/team/hugo.png":"d362a8ef1e47778ad226370f4a94069e0c4d16df4dc94459bae3a312b93eea36","/team/javier.png":"6f942b6e0b79ed88153de34a3299ee41d0abfbb58b469af9c9c83741f87fffcb","/static/js/main.35c5c29b.js.map":"128513c5c24e05e3a9f71cb31ef7c2056eefbc9b434d46ca798a213b1c61959f"}}
+[debug] [2025-03-27T16:12:31.158Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1086609249505/sites/sixth-spot-451517-f9/versions/18c8887159826f90:populateFiles 200
+[debug] [2025-03-27T16:12:31.159Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1086609249505/sites/sixth-spot-451517-f9/versions/18c8887159826f90:populateFiles {"uploadRequiredHashes":["487cc110791e0073fbd0c90345f69d16d6e59e4429ce1bfcbf4ab126068b4740","6b946ffff99e89188a9eb56c79668cf388456a62fd0a9a75cf4a10ed5fc48fe1","933bbb1f0525ff0ab590a8fe283db6c248fdbca8ca3d939c709a6ddfac845dde","128513c5c24e05e3a9f71cb31ef7c2056eefbc9b434d46ca798a213b1c61959f"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files"}
+[debug] [2025-03-27T16:12:31.159Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:31.159Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:31.159Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:31.159Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:31.160Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:31.160Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:31.160Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:31.160Z] Checked if tokens are valid: true, expires at: 1743095546017
+[debug] [2025-03-27T16:12:31.160Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files/487cc110791e0073fbd0c90345f69d16d6e59e4429ce1bfcbf4ab126068b4740 [none]
+[debug] [2025-03-27T16:12:31.160Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files/487cc110791e0073fbd0c90345f69d16d6e59e4429ce1bfcbf4ab126068b4740 [stream]
+[debug] [2025-03-27T16:12:31.161Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files/6b946ffff99e89188a9eb56c79668cf388456a62fd0a9a75cf4a10ed5fc48fe1 [none]
+[debug] [2025-03-27T16:12:31.161Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files/6b946ffff99e89188a9eb56c79668cf388456a62fd0a9a75cf4a10ed5fc48fe1 [stream]
+[debug] [2025-03-27T16:12:31.162Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files/933bbb1f0525ff0ab590a8fe283db6c248fdbca8ca3d939c709a6ddfac845dde [none]
+[debug] [2025-03-27T16:12:31.162Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files/933bbb1f0525ff0ab590a8fe283db6c248fdbca8ca3d939c709a6ddfac845dde [stream]
+[debug] [2025-03-27T16:12:31.163Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files/128513c5c24e05e3a9f71cb31ef7c2056eefbc9b434d46ca798a213b1c61959f [none]
+[debug] [2025-03-27T16:12:31.163Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sixth-spot-451517-f9/versions/18c8887159826f90/files/128513c5c24e05e3a9f71cb31ef7c2056eefbc9b434d46ca798a213b1c61959f [stream]
+[debug] [2025-03-27T16:12:31.163Z] [hosting][populate queue][FINAL] {"max":662,"min":662,"avg":662,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":665}
+[debug] [2025-03-27T16:12:31.164Z] [hosting] uploads queued: 4
