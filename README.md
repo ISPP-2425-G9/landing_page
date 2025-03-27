@@ -1,5 +1,7 @@
 # CARONTE - Landing Page
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ca7363d281104b5186ff8fdefd9a1658)](https://app.codacy.com/gh/ISPP-2425-G9/landing_page?utm_source=github.com&utm_medium=referral&utm_content=ISPP-2425-G9/landing_page&utm_campaign=Badge_Grade)
+
 ## Descripción
 
 La Landing Page de Caronte es una aplicación web desarrollada con React que proporciona información detallada sobre nuestra plataforma de esquelas y mensajes personalizados. En esta página, los usuarios pueden conocer más sobre quiénes somos, nuestros servicios, cómo contactarnos y explorar las funcionalidades clave de nuestra plataforma.
