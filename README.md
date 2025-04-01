@@ -2,67 +2,65 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d7297335501d4649830843216caa4df3)](https://app.codacy.com/gh/ISPP-2425-G9/landing_page/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
-## Descripción
+## Description
 
-La Landing Page de Caronte es una aplicación web desarrollada con React que proporciona información detallada sobre nuestra plataforma de esquelas y mensajes personalizados. En esta página, los usuarios pueden conocer más sobre quiénes somos, nuestros servicios, cómo contactarnos y explorar las funcionalidades clave de nuestra plataforma.
+The Caronte Landing Page is a web application developed with React that provides detailed information about our obituary and personalized messaging platform. On this page, users can learn more about who we are, our services, how to contact us, and explore the key features of our platform.
 
-## Requisitos
+## Requirements
 
-- **Node.js** (versión recomendada: 18 o superior)
-- **npm** (incluido con Node.js) o **yarn**
+- **Node.js** (Recommended version: 18 or higher)
+- **npm** (included with Node.js) or **yarn**
 
+### Installation on Ubuntu
 
-### Instalación en Ubuntu
-
-1. **Instalar Node.js y npm:**
+1. **Install Node.js and npm:**
 
    ```bash
    sudo apt update
    sudo apt install nodejs npm
    ```
 
-   Verifica la instalación con:
+   Verify the installation with:
    ```bash
    node -v
    npm -v
    ```
 
+### Installation on Windows
 
-### Instalación en Windows
+1. **Install Node.js:**
 
-1. **Instalar Node.js:**
-
-- Descarga el instalador desde la [página oficial de Node.js](https://nodejs.org/).
-- Ejecuta el instalador y sigue las instrucciones.
-- Verifica la instalación con:
+- Download the installer from the [official Node.js website](https://nodejs.org/).
+- Run the installer and follow the instructions.
+- Verify the installation with:
 
    ```bash
    node -v
    npm -v
    ```
 
-## Instalación del proyecto
+## Project Installation
 
-### Paso 1: Clonar el repositorio
+### Step 1: Clone the repository
 
-   Clona el repositorio en tu máquina:
+   Clone the repository on your machine:
    ```bash
    git clone https://github.com/ISPP-2425-G9/landing_page.git
    cd landing_page
    ```
 
-### Paso 2: Instalar dependencias
+### Step 2: Install dependencies
 
-   Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+   Run the following command to install the project dependencies:
    ```bash
    npm install
    ```
-### Paso 3: Iniciar la aplicación
+### Step 3: Start the application
 
-   Para iniciar la aplicación en modo desarrollo, ejecuta:
+   To start the application in development mode, run:
 
    ```bash
    npm start
    ```
 
-En la salida de la consola, encontrarás la ruta para abrir la app en el navegador: `http://localhost:8081`.
+In the console output, you will find the URL to open the app in your browser: `http://localhost:8081`.
