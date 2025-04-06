@@ -3,17 +3,17 @@ import "../styles/Ads.css";
 
 const Ads = () => {
   const videos = [
-    { id: "ZT6DLKNmrzY", title: "First Video Title" },
-    { id: "ZT6DLKNmrzY", title: "Second Video Title" },
+    { id: "WHBSjduVhoo", title: "Para clientes" },
   ];
 
   return (
     <div>
-      <h1>Ads</h1>
+      <h1 className="page-title animate-fade-in">Galería</h1>
+      <h3 className="page-subtitle animate-slide-up">Conócenos</h3>
       <div className="video-container">
         {videos.map((video) => (
           <div key={video.id} className="video-item">
-            <h2 className="video-title">{video.title}</h2>
+            <h2 className="video-title animate-fade-in">{video.title}</h2>
             <iframe
               width="560"
               height="315"
