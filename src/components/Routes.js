@@ -7,6 +7,7 @@ import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Terms from "./Terms";
+import Ads from "./Ads";
 
 
 
@@ -20,6 +21,7 @@ const AppRoutes = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/ads" element={<Ads />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />

@@ -32,6 +32,7 @@ const Header = () => {
           <ul>
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="/services">Servicios</Link></li>
+            <li><Link to="/ads">Ads</Link></li>
             <li><Link to="/about">Sobre nosotros</Link></li>
             <li><Link to="/contact">Contacto</Link></li>
             <li className="versions-dropdown">
