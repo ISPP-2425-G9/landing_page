@@ -3,8 +3,9 @@ import "../styles/Ads.css";
 
 const Ads = () => {
   const videos = [
-    { id: "ZW6snDb0S1Y", title: "Para clientes" },
-    { id: "hn29FdMJoqY", title: "Para inversores" }
+    { id: "W9tS8qdiZ08", title: "Para empresas" },
+    { id: "hn29FdMJoqY", title: "Para inversores" },
+    { id: "ZW6snDb0S1Y", title: "Para clientes" }
   ];
 
   return (
