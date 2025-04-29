@@ -160,7 +160,7 @@ const Contact = () => {
               <FaXTwitter />
             </a>
             <a
-              href="https://instagram.com/caronteapp"
+              href="https://instagram.com/caronte_es"
               target="_blank"
               rel="noopener noreferrer"
             >
