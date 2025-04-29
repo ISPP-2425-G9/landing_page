@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section left">
-          <a className="icons" href="https://instagram.com/caronteapp" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a className="icons" href="https://instagram.com/caronte_es/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a className="icons" href="https://www.linkedin.com/in/caronte-app/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a className="icons" href="https://x.com/CaronteApp" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
         </div>
