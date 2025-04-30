@@ -49,11 +49,11 @@ const Header = () => {
                 <li><a href="//sprint3.caronte.site" target="_blank" rel="noreferrer">Sprint 3</a></li>
                 <li>
                   <a 
-                    href="/" 
-                    className="disabled-link" 
-                    title="Próximamente disponible"
+                    href="//ppl.caronte.site"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    PPL (próximamente)
+                    PPL
                   </a>
                 </li>
               </ul>
