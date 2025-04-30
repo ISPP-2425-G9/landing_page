@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import { FaFacebook, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import {
   FaInstagram,
   FaLinkedin,
   FaTiktok,
   FaWhatsapp,
   FaXTwitter,
+  FaYoutube,
 } from "react-icons/fa6";
 import "../styles/Contact.css";
 
@@ -146,11 +147,11 @@ const Contact = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=61573575124143"
+              href="https://www.youtube.com/@CARONTE_ES"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook />
+              <FaYoutube />
             </a>
             <a
               href="https://x.com/CaronteApp"

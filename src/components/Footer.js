@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTiktok, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTiktok, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-section right">
-          <a className="icons" href="https://www.facebook.com/profile.php?id=61573575124143" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          <a className="icons" href="https://www.youtube.com/@CARONTE_ES" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
           <a className="icons" href="https://www.tiktok.com/@caronteapp" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
           <a className="icons" href="https://github.com/ISPP-2425-G9" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
         </div>
