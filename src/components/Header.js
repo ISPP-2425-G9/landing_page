@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   const handleVersionsClick = () => {
-    setVersionsOpen(currentState => !currentState);
+    setVersionsOpen((currentState) => !currentState);
   };
 
   return (
@@ -21,7 +21,7 @@ const Header = () => {
           src={`${process.env.PUBLIC_URL}/caronte_blanco.svg`}
           alt="Logo de Caronte"
           className="logo"
-          onClick={() => window.location.href = "/"}
+          onClick={() => (window.location.href = "/")}
         />
 
         <button className="menu-toggle" onClick={toggleMenu}>
@@ -30,30 +30,65 @@ const Header = () => {
 
         <nav className={menuOpen ? "open" : "desktop-menu"}>
           <ul>
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/services">Servicios</Link></li>
-            <li><Link to="/ads">Galería</Link></li>
-            <li><Link to="/about">Sobre nosotros</Link></li>
-            <li><Link to="/contact">Contacto</Link></li>
+            <li>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/services">Servicios</Link>
+            </li>
+            <li>
+              <Link to="/ads">Galería</Link>
+            </li>
+            <li>
+              <Link to="/about">Sobre nosotros</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contacto</Link>
+            </li>
             <li className="versions-dropdown">
-              <button 
+              <button
                 type="button"
-                onClick={handleVersionsClick} 
+                onClick={handleVersionsClick}
                 className="versions-toggle"
               >
-                Versiones {versionsOpen ? '▴' : '▾'}
+                Versiones {versionsOpen ? "▴" : "▾"}
               </button>
-              <ul className={`versions-menu ${versionsOpen ? 'show' : ''}`}>
-                <li><a href="//sprint1.caronte.site" target="_blank" rel="noreferrer">Sprint 1</a></li>
-                <li><a href="//sprint2.caronte.site" target="_blank" rel="noreferrer">Sprint 2</a></li>
-                <li><a href="//sprint3.caronte.site" target="_blank" rel="noreferrer">Sprint 3</a></li>
+              <ul className={`versions-menu ${versionsOpen ? "show" : ""}`}>
                 <li>
-                  <a 
-                    href="//ppl.caronte.site"
+                  <a href="//wpl.caronte.site" target="_blank" rel="noreferrer">
+                    WPL (beta)
+                  </a>
+                </li>
+                <li>
+                  <a href="//ppl.caronte.site" target="_blank" rel="noreferrer">
+                    PPL
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="//sprint3.caronte.site"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    PPL
+                    Sprint 3
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="//sprint2.caronte.site"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Sprint 2
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="//sprint1.caronte.site"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Sprint 1
                   </a>
                 </li>
               </ul>
