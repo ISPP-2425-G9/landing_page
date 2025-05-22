@@ -56,40 +56,20 @@ const Header = () => {
               <ul className={`versions-menu ${versionsOpen ? "show" : ""}`}>
                 <li>
                   <a href="//wpl.caronte.site" target="_blank" rel="noreferrer">
-                    WPL (beta)
+                    WPL
                   </a>
                 </li>
                 <li>
-                  <a href="//ppl.caronte.site" target="_blank" rel="noreferrer">
-                    PPL
-                  </a>
+                  <span className="disabled-link">PPL</span>
                 </li>
                 <li>
-                  <a
-                    href="//sprint3.caronte.site"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Sprint 3
-                  </a>
+                  <span className="disabled-link">Sprint 3</span>
                 </li>
                 <li>
-                  <a
-                    href="//sprint2.caronte.site"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Sprint 2
-                  </a>
+                  <span className="disabled-link">Sprint 2</span>
                 </li>
                 <li>
-                  <a
-                    href="//sprint1.caronte.site"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Sprint 1
-                  </a>
+                  <span className="disabled-link">Sprint 1</span>
                 </li>
               </ul>
             </li>
